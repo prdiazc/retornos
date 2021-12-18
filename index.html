@@ -29,102 +29,222 @@
 
   <!--FIN ENLACES -->
 
+  <style>
+    .up{border-top: 1px solid}
+    .bottom{border-bottom: 1px solid}
+    .bottom2{border-bottom: 3px solid}
+    .left{border-left: 1px solid}
+    .right{border-right: 1px solid}
+    .veri{font-size: 80%}
+
+    p.dotted {border-style: dotted;}
+    p.dashed {border-style: dashed;}
+    p.solid {border-style: solid;}
+    p.double {border-style: double;}
+    p.groove {border-style: groove;}
+    p.ridge {border-style: ridge;}
+    p.inset {border-style: inset;}
+    p.outset {border-style: outset;}
+    p.none {border-style: none;}
+    p.hidden {border-style: hidden;}
+    p.mix {border-style: dotted dashed solid double;}
+</style>  
+
+
 </head>
 <body>
 
 
+<!--  Inicio DIV "Cargaexterna0"  
+  Contiene el formulario para agregar datos   -->
 
-    <!--  Inicio DIV "Cargaexterna0"  
-      Contiene el formulario para agregar datos   -->
 
+<br>
 
-    <br>
+<div class='container-lg'>
 
-    <div class='container-lg'>
-        <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    DATOS 1
-                </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+            <button  class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                VOLUNTARIEDAD
+            </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                    <div class="container">
+
+                        <div class="row row-cols-2 row-cols-lg-3">
+                            <div style='border: 2px solid' class="col-4 col-lg-12"><center>PRIMERO<center></div>
+                            <div class="left right bottom col-4 col-lg-3">Cód. FO-GESR-1005</div>
+                            <div class="right col-4 col-lg-7"><center>Formato</center></div>
+                            <div style='border-right: 2px solid' class="col-4 col-lg-2"></div>
+                            <div class="right left col-4 col-lg-3">Versión. 3</div>
+                            <div class="right col-4 col-lg-7"><center>FO-GESR - Formato de voluntariedad Retornos o Reubicaciones</center></div>
+                            <div class="right col-4 col-lg-2"></div>
+                            <div style='border: 2px solid' class="col-4 col-lg-12"><center>PRIMERO</center></div>
+                        </div>
+
 
                         <div class="row align-items-start">
-                            <div class="col" id="divtipo_doc" >
-                                <label for="vtipo_doc">Tipo - Documento:</label>
-                                <select class="form-control" id="vtipo_doc" onkeypress="return LetrasMayusculas(event)" required onblur="verificacampo('vtipo_doc')" onchange="paso1hogar('divtipo_doc','vtipo_doc')"  name="vtipo_doc">
-                                <option  value="">SELECCIONA</option>
-                                <script > <option  value="">cédula</option></script>
-                                </select>
+                            <div class="col col-lg-2 " id="divtipo_doc" ><br>
+                                <label >MEDELL&Iacute;N, </label>
                             </div>
-                            <div class="col" id="divnum_doc">
-                                <label for="vnum_doc">N&uacute;mero - Documento:</label>
+                            <div class="col col-lg-3" id="divnum_doc"><br>
+                                    <input class="form-control" type="date" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                    >
+                            </div>
+                            <div class="col" id="divtipo_doc" ><br>
+                                <label >CENTRO DE ATENCI&Oacute;N A V&Iacute;CTIMAS</label>
+                            </div>
+                            <div class="col" id="divnum_doc"><br>
                                     <input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                    >
+                            <br>
+                            </div>
+
+                            
+                            <h7>SEÑORES:</h7>
+                            <b><h7>SECRETARIA DE INCLUSIÓN SOCIAL, FAMILIA Y DERECHOS HUMANOS</h7></b>
+                            <b><h7>EQUIPO MUNICIPAL DE ATENCIÓN Y REPARACIÓN A VÍCTIMAS DEL CONFLICTO ARMADO</h7></b>
+
+                            <div><br><h7><b>ASUNTO:</b> DERECHO DE PETICI&Oacute;N</h7></div>
+                        </div>
+
+                        <div class="row align-items-start"><br>
+                            &nbsp;&nbsp; Yo, <div class="col-lg-4"><br>
+                            <input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                    >
+                            </div><br>
+                            &nbsp; identificado (a) con cédula número, <div class="col-lg-3"><br>
+                            <input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                    >
+                            </div><br>
+                            &nbsp; con fecha de nacimiento, <div class="col-lg-4">
+                            <br><input class="form-control" type="date" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
                                     >
                             </div>
                         </div>
                         <br>
 
-                        <div class="row align-items-start">
-                            <div class="col "  id="divnombre1">
-                                <label for="vnombre1">Primer Nombre:</label>
-                                    <input onkeypress="return alfanumericos(event)" required  class="form-control " type="text" id="vnombre1" onchange="paso1hogar('divnombre1','vnombre1')"  name="vnombre1"  > <br>
-                            </div>
-                            <div class="col" id="divnombre2">
-                                <label for="vnombre2">Segundo Nombre</label>
-                                    <input  class="form-control " type="text" id="vnombre2"   onkeypress="return alfanumericos(event)" onchange="paso1hogar('divnombre2','vnombre2')"  name="vnombre2"
-                                    ><br>
-                            </div>
-                            <div class="col" id="divapellido1">
-                                <label for="vapellido1">Primer Apellido:</label>
-                                    <input  class="form-control " type="text" id="vapellido1"  onkeypress="return alfanumericos(event)" required onblur="verificacampo('vapellido1')" onchange="paso1hogar('divapellido1','vapellido1')"  name="vapellido1" 
-                                    ><br>
-                            </div>
-                            <div class="col" id="divapellido2">
-                                <label for="vapellido2">Segundo Apellido</label>
-                                    <input  class="form-control " type="text" id="vapellido2"  onkeypress="return alfanumericos(event)"  onchange="paso1hogar('divapellido2','vapellido2')"  name="vapellido2" 
-                                    ><br>
-                            </div>
-                            <hr>
+                        <div class="row row-cols-2 row-cols-lg-3">
+                            <div style='border: 2px solid' class="col-4 col-lg-12"><center>CONDICION DIFERENCIAL<center></div>
+                            <div class="left right bottom col-lg-3">GRUPO ETNICO</div>
+                            <div class="bottom right col-4 col-lg-4"><center>elige</center></div>
+                            <div class="bottom  col-lg-1">CUAL?</div>
+                            <div class="bottom right left col-lg-4"></div>
+                        </div>
+                        <hr>
+                        <div class="row row-cols-3 row-cols-lg-3">
+                            <div class="left up right col-4 col-lg-2"><center>CONDICIÓN</center></div>
+                            <div class="up bottom right col-4 col-lg-4">CABEZA DE HOGAR ADULTO MAYOR</div>
+                            <div class="up bottom right col-4 col-lg-1"><input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></div>
+                            <div class="up bottom right col-4 col-lg-4">CABEZA DE HOGAR MENOR DE EDAD</div>
+                            <div class="up bottom right col-4 col-lg-1"><input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></div>
+                            <div class="left right col-4 col-lg-2"><center>DIFERENCIAL</center></div>
+                            <div class="right bottom col-4 col-lg-4">MUJER CABEZA DE HOGAR</div>
+                            <div class="right bottom col-4 col-lg-1"><input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></div>
+                            <div class="right bottom col-4 col-lg-4">GRUPO ETNICO</div>
+                            <div class="right bottom col-4 col-lg-1"><input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></div>
+                            <div class="left right col-4 col-lg-2"><center>FAMILIAR</center></div>
+                            <div class="right bottom col-4 col-lg-4">ADULTO MAYOR UNIPERSONAL</div>
+                            <div class="right bottom col-4 col-lg-1"><input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></div>
+                            <div class="right bottom col-4 col-lg-4">NINGUNA</div>
+                            <div class="right bottom col-4 col-lg-1"><input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></div>
+                            <div class="bottom left right col-4 col-lg-2"></div>
+                            <div class="bottom right col-4 col-lg-4">CABEZA DE HOGAR DISCAPACITADO</div>
+                            <div class="bottom right col-4 col-lg-1"><input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></div>
+                            <div class="bottom right col-4 col-lg-4">OTRO,  CUAL?</div>
+                            <div class="bottom right col-4 col-lg-1"><input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></div>
+                        </div>
+                        <hr><hr>
+
+                        <div class="row row-cols-2 row-cols-lg-5">
+                            <div style='border: 2px solid' class="col-lg-12"><center>INFORMACION  DESPLAZAMIENTO<center></div>
+                            <div class="left right col"><center><b>FECHA DE LOS HECHOS</b></center></div>
+                            <div class="right col"><center><b>DEPARTAMENTO</b></center></div>
+                            <div class="right col"><center><b>MUNICIPIO</b></center></div>
+                            <div class="right col"><center><b>TIPO ENTORNO</b></center></div>
+                            <div class="right col"><center><b>NOMBRE ENTORNO</b></center></div>
+                            <div class="left right bottom col"><center><input class="form-control" type="date" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></center></div>
+                            <div class="right bottom col"><center><input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></center></div>
+                            <div class="right bottom col"><center><input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></center></div>
+                            <div class="right bottom col"><center><input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></center></div>
+                            <div class="right bottom col"><center><input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></center></div>
+                        </div>
+                        <div class="row row-cols-2 ">
+                            <div class="left right col-2"><center><b>ESTADO RUV</b></center></div>
+                            <div class="right col-2"><center><b>CÓDIGO RUV</b></center></div>
+                            <div class="right col-2"><center><b>FECHA VALORACIÓN</b></center></div>
+                            <div class="right col-3"><center><b>NÚMERO DE PERSONAS QUE INTEGRAN EL GRUPO FAMILIAR</b></center></div>
+                            <div class="right col-3"><center><b>NÚMERO DE PERSONAS MENORES DE 18 AÑOS QUE INTEGRAN EL NUCLEO FAMILIAR</b></center></div>
+                            <div class="left right bottom col-2"><center><input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></center></div>
+                            <div class="right bottom col-2"><center><input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></center></div>
+                            <div class="right bottom col-2"><center><input class="form-control" type="daTe" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></center></div>
+                            <div class="right bottom col-3"><center><input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></center></div>
+                            <div class="right bottom col-3"><center><input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></center></div>
+                        </div>
+                        <hr><hr>
+
+                        <div class="row row-cols-6">
+                            <div style='border: 2px solid' class="col-lg-12"><center>MOTIVOS DE DESPLAZAMIENTO<center></div>
+                            <div class="left veri right col-1"><center><b>HOMICIDIO</b></center></div>
+                            <div class="right veri col-1"><center><b >AMENAZAS</b></center></div>
+                            <div class="right veri col-2"><center><b>ENFRENTAMIENTO</b></center></div>
+                            <div class="right veri col-1"><center><b>ASPERCION</b></center></div>
+                            <div class="right veri col-3"><center><b>RIESGO O RECLUTAMIENTO FORZADO</b></center></div>
+                            <div class="right veri col-2"><center><b>DESAPARICION FORZADA</b></center></div>
+                            <div class="right veri col-1"><center><b>MIEDO</b></center></div>
+                            <div class="right veri col-1"><center><b>VIOLENCIA SEXUAL</b></center></div>
+                            <div class="left right bottom col-1"><input class="form-control"></div>
+                            <div class="right bottom col-1"><input class="form-control"></div>
+                            <div class="right bottom col-2"><input class="form-control"></div>
+                            <div class="right bottom col-1"><input class="form-control"></div>
+                            <div class="right bottom col-3"><input class="form-control"></div>
+                            <div class="right bottom col-2"><input class="form-control"></div>
+                            <div class="right bottom col-1"><input class="form-control"></div>
+                            <div class="right bottom col-1"><input class="form-control"></div>
+                            <div style='solid' class="left bottom right col-lg-1"><center>OTRO<center></div>
+                            <div style='solid' class="bottom right col-lg-11"><center><center></div>
+                            <div style='solid' class="left bottom right col-lg-2"><center>OBSERVACION<center></div>
+                            <div style='solid' class="bottom right col-lg-10"><center><center></div>
+                        </div>
+
+                        <div class="row align-items-start"><br>
+                            &nbsp;&nbsp; Me permito solicitar acompañamiento al proceso de, <div class="col-lg-4"><br>
+                            <input class="form-control bottom2 " type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                    >
+                            </div><br>
                         </div>
 
 
                     </div>
-                </div>
-            </div>
-            <a href="../index.php">hola</a>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    DATOS 2
-                </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
 
-                </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    DATOS 3
-                </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
+                    <br>
 
-                </div>
+
                 </div>
             </div>
         </div>
-    </di>     
-                                                            
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                SOCIOECON&Oacute;MICO
+            </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
 
+            </div>
+            </div>
         </div>
-    <!-- FIN DIV "Cargaexterna0"  -->
+    </div>
+</di>     
+                                                        
+
+    </div>
+<!-- FIN DIV "Cargaexterna0"  -->
 
 
 
