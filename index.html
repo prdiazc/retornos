@@ -27,9 +27,9 @@
 
   <script src="js/bootstrap.min.js"></script>
 
- <!--FIN ENLACES -->
+  <!--FIN ENLACES -->
 
- <style>
+<style>
     .up{border-top: 1px solid}
     .bottom{border-bottom: 1px solid}
     .bottom2{border-bottom: 3px solid}
@@ -37,6 +37,10 @@
     .right{border-right: 1px solid}
     .veri{font-size: 80%}
     .veri2{font-size: 70%}
+    .divtitle{background-color:#DCDCDC;}
+    .div_color1{background-color:#009999;}
+    
+
 
     p.dotted {border-style: dotted;}
     p.dashed {border-style: dashed;}
@@ -72,14 +76,14 @@
                         <div class="container">
 
                             <div class="row row-cols-2 row-cols-lg-3">
-                                <div style='border: 2px solid' class="col-4 col-lg-12"><center>&nbsp;<center></div>
+                                <div style='border: 2px solid' class="div_color1 col-4 col-lg-12"><center>&nbsp;<center></div>
                                 <div class="left right bottom col-4 col-lg-3">Cód. FO-GESR-1005</div>
                                 <div class="right col-4 col-lg-7"><center>Formato</center></div>
                                 <div style='border-right: 2px solid' class="col-4 col-lg-2"></div>
                                 <div class="right left col-4 col-lg-3">Versión. 3</div>
                                 <div class="right col-4 col-lg-7"><center>FO-GESR - Formato de voluntariedad Retornos o Reubicaciones</center></div>
                                 <div class="right col-4 col-lg-2"></div>
-                                <div style='border: 2px solid' class="col-4 col-lg-12"><center>&nbsp;</center></div>
+                                <div style='border: 2px solid' class=" div_color1 col-4 col-lg-12"><center>&nbsp;</center></div>
                             </div>
 
                             <div class="row align-items-start">
@@ -474,18 +478,16 @@
                         <div class="container">
 
                             <div class="row row-cols-2 row-cols-lg-3">
-                                <div style='border: 2px solid' class="col-4 col-lg-12"><center>&nbsp;<center></div>
+                                <div style='border: 2px solid' class="div_color1 col-4 col-lg-12"><center>&nbsp;<center></div>
                                 <div class="left right bottom col-4 col-lg-3">Cód. FO-GESR-1004</div>
                                 <div class="right col-4 col-lg-7"><center>Formato</center></div>
                                 <div style='border-right: 2px solid' class="col-4 col-lg-2"></div>
                                 <div class="right left col-4 col-lg-3">Versión. 3</div>
                                 <div class="right col-4 col-lg-7"><center>FO-GESR - Valoración socioeconómica a hogares en proceso de retorno o reubicación</center></div>
                                 <div class="right col-4 col-lg-2"></div>
-                                <div style='border: 2px solid' class="col-4 col-lg-12"><center>&nbsp;</center></div>
+                                <div style='border: 2px solid' class="div_color1 col-4 col-lg-12"><center>&nbsp;</center></div>
                             </div>
                             <br>
-
-
                             <div class="row ">
                                 <div class="left veri bottom up right col-2"><center><b>FECHA DE CARACTERIZACION</b></center></div>
                                 <div class="right up bottom veri col-2"><center><b ><input type="date" class="form-control"></b></center></div>
@@ -578,11 +580,357 @@
                                         <div class=" col"><center><b><input type="text" class="form-control"></b></center></div>
                                     </div>
                                 </div>
-
-                                <div class="bottom up veri col-12"><center><b>TIPOLOGIA  FAMILIAR (marque con una x)</b></center></div>
-                                <div class="row align-items-start"><br>
-                                    &nbsp;&nbsp; Las personas que me acompañarían son :
+                            </div>
+                            <div class="row right bottom left align-items-center">
+                                <div class=" bottom  veri col-12"><center><b></b></center></div>
+                                <div class="col-4">
+                                    <div class="col-12">
+                                            <div class="col-12">
+                                                <div class="row ">
+                                                    <div class="right  bottom veri col-9"><center><b>ADULTO MAYOR UNIPERSONAL</b></center></div>
+                                                    <div class=" bottom col-3"><center><b><input type="text" class="form-control"></b></center></div>
+                                                    <div class="right  veri col-9"><center><b>CABEZA DE HOGAR DISCAPACITADO</b></center></div>
+                                                    <div class=" col-3"><center><b><input type="text" class="form-control"></b></center></div>
+                                                </div>
+                                            </div>
+                                    </div>
                                 </div>
+                                <div class="col-4">
+                                    <div class="col-12">
+                                            <div class="col-12">
+                                                <div class="row ">
+                                                    <div class=" right left bottom veri col-9"><center><b>NINGUNA</b></center></div>
+                                                    <div class=" bottom right col-3"><center><b><input type="text" class="form-control"></b></center></div>
+                                                    <div class="right left veri col-9"><center><b>OTRO,  CUÁL?</b></center></div>
+                                                    <div class="right col-3"><center><b><input type="text" class="form-control"></b></center></div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="col-2" >
+                                    <div  class=" row align-items-center">
+                                        <div class=" col"><center><b>SABE ESCRIBIR?</b></center></div>
+                                    </div>
+                                </div>
+                                <div class="col-2" >
+                                    <div  class=" row align-items-center">
+                                        <div class=" col"><center><b><input type="text" class="form-control"></b></center></div>
+                                    </div>
+                                </div>
+                            </div><br>
+                            <div class="row right  left ">
+                                    <div class="bottom up veri col-12"><center><b>TIPOLOGIA  FAMILIAR (marque con una x)</b></center></div>
+                                    <div class="right bottom veri col-1"><center><b>NUCLEAR</b></center></div>
+                                    <div class="right veri2 bottom col-1"><center><b>EXTENSA</b></center></div>
+                                    <div class="right veri bottom col-2"><center><b>MONOPARENTAL</b></center></div>
+                                    <div class="right veri bottom col-2"><center><b>UNIPERSONAL</b></center></div>
+                                    <div class="right veri bottom col-2"><center><b>FRATERNA</b></center></div>
+                                    <div class="right veri bottom col-2"><center><b>SIMULTANEA</b></center></div>
+                                    <div class="right veri bottom col-2"><center><b>COMPUESTA</b></center></div>
+                                    <div class="right  bottom veri col-1"><center><b><input type="text" class="form-control"></b></center></div>
+                                    <div class="right bottom veri2 col-1"><center><b><input type="text" class="form-control"></b></center></div>
+                                    <div class="right bottom veri col-2"><center><b><input type="text" class="form-control"></b></center></div>
+                                    <div class="right veri bottom col-2"><center><b><input type="text" class="form-control"></b></center></div>
+                                    <div class="right veri bottom col-2"><center><b><input type="text" class="form-control"></b></center></div>
+                                    <div class="right veri bottom col-2"><center><b><input type="text" class="form-control"></b></center></div>
+                                    <div class="right veri bottom col-2"><center><b><input type="text" class="form-control"></b></center></div>
+                            </div><br>
+
+                            <div class="row up right  left ">
+                                    <div class="right bottom veri col-4">
+                                        <div class="row">
+                                            <div class="col-8"><center><b>PERTENECE A UN  UN GRUPO  ETNICO</b></center></div>                                        
+                                            <div class="left col-4"><center><b><input type="text" class="form-control"></b></center></div>
+                                            <div class="up col-8"><center><b>AUTORIDAD</b></center></div>                                        
+                                            <div class="up left col-4"><center><b><input type="text" class="form-control"></b></center></div>
+                                            <div class="up col-8"><center><b>COMUNIDAD</b></center></div>                                        
+                                            <div class="up left col-4"><center><b><input type="text" class="form-control"></b></center></div>
+                                        </div>
+                                    </div>
+                                    <div class="right  bottom veri col-2"><center><b><br>USTED O ALGUN MIEMBRO DE SU FAMILIA TIENE ALGUN TIPO DE DISCAPACIDAD</b></center></div>
+                                    <div class="right veri bottom col-2">
+                                                <br><textarea type="text" class="form-control"></textarea>
+                                    </div>
+                                    <div class="right veri bottom col-2">
+                                        <div class="col-12 divtitle"><center><b>QUIÉN?</b></center></div>
+                                        <br>
+                                        <div class="right  bottom veri col-12"><center><b><input type="text" class="form-control"></b></center></div>
+                                    </div>
+                                    <div class=" veri bottom col-2">
+                                        <div class="col-12 divtitle"><center><b>CUÁL?</b></center></div>
+                                        <br>
+                                        <div class=" bottom veri col-12"><center><b><input type="text" class="form-control"></b></center></div>
+                                    </div>
+                            </div>
+                            <br>
+
+                            <div class="row left right ">
+                                    <div class="bottom up veri col-12"><center><b>VIVIENDA ANTES DEL DESPLAZAMIENTO</b></center></div>
+                                    <div class="bottom veri col-12"><center><b>CALIDAD DE DERECHO (MARQUE CON UNA X)</b></center></div>
+
+                                    <div class="right veri bottom col-2"><center><b>TIPO DE TENENCIA</b></center></div>
+                                    <div class="right veri bottom col-2"><input type="text" class="form-control"></div>
+                                    <div class="right veri bottom col-2"><center><b>TIENE DOCUMENTO</b></center></div>
+                                    <div class="right veri bottom col-1"><input type="text" class="form-control"></div>
+                                    <div class=" veri bottom col-1"><center><b>CUAL?</b></center></div>
+                                    <div class=" veri bottom col-4"><input type="text" class="form-control"></div>
+                                    <div class="bottom col-4">
+                                        <div class="row right align-items-center">
+                                            <div class="col-4" >
+                                                <div  class=" row">
+                                                    <div class="veri2 col"><center><b>EN QUE ESTADO SE ENCONTRABA ANTES DEL DESPLAZAMIENTO</b></center></div>
+                                                </div>
+                                            </div>
+                                            <div class="left right col-4" >
+                                                <br><div  class=" row">
+                                                    <div class=" col"><center><b><input type="text" class="form-control"></b></center></div>
+                                                </div><br>
+                                            </div>
+                                            <div class=" col-4" >
+                                                <div  class=" row">
+                                                    <div class="veri col"><center><b>SERVICIOS PÚBLICOS BÁSICOS</b></center></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right veri bottom col-4">
+                                        <div class="row ">
+                                                <div class="veri bottom col-3"><br><center><b>ACUEDUCTO</b></center></div>
+                                                <div class="veri bottom col-3"><input type="text" class="form-control"></div>
+                                                <div class="veri bottom col-3"><br><center><b>ALCANTARILLADO</b></center></div>
+                                                <div class="veri bottom col-3"><input type="text" class="form-control"></div>
+                                        </div>
+                                        <div class="row ">
+                                                <div class="veri col-3"><center><br><b>ENERGÍA</b></center></div>
+                                                <div class="veri col-3"><input type="text" class="form-control"></div>
+                                                <div class="veri col-3"><center><b>POZO SEPTICO</b></center></div>
+                                                <div class="veri col-3"><input type="text" class="form-control"></div>
+                                        </div>
+                                    </div>
+                                    <div class="bottom col-4">
+                                        <div class="row  align-items-center">
+                                            <div class="col-6" >
+                                                <div  class=" row">
+                                                    <div class="veri col"><center><b>ADQUIRIO ESTA VIVIENDA POR SUBSIDIO</b></center></div>
+                                                </div>
+                                            </div>
+                                            <div class="left  col-6" >
+                                                <br><div  class=" row">
+                                                    <div class=" col"><center><b><input type="text" class="form-control"></b></center></div>
+                                                </div><br>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bottom col-4">
+                                        <div class="row ">
+                                            <center><div class="col-6" ><br><br>
+                                                <div  class=" row">
+                                                    <div class="col"><b>EQUIPAMENTO BASICO</b></div>
+                                                </div>
+                                            </div></center>
+                                        </div>
+                                    </div>
+                                    <div class="left veri bottom col-8">
+                                        <div class="row ">
+                                                <div class="bottom right col-4"><center><b>ESCUELA/COLEGIO</b></center></div>
+                                                <div class="bottom right col-2"><input type="text" class="form-control"></div>
+                                                <div class="bottom right col-4"><center><b> ASISTENCIA SOCIAL</b></center></div>
+                                                <div class="bottom col-2"><input type="text" class="form-control"></div>
+                                        </div>
+                                        <div class="row ">
+                                                <div class="bottom right col-4"><center><b>PUESTO SALUD</b></center></div>
+                                                <div class="bottom right col-2"><input type="text" class="form-control"></div>
+                                                <div class="bottom right col-4"><center><b>TRASPORTE /VÍAS</b></center></div>
+                                                <div class="bottom col-2"><input type="text" class="form-control"></div>
+                                        </div>
+                                        <div class="row ">
+                                                <div class="bottom right col-4"><center><b>CENTROS DE RECREACIÓN</b></center></div>
+                                                <div class="bottom right col-2"><input type="text" class="form-control"></div>
+                                                <div class="bottom right col-4"><center><b>OTRO</b></center></div>
+                                                <div class="bottom col-2"><input type="text" class="form-control"></div>
+                                        </div>
+                                        <div class="row ">
+                                                <div class="right col-4"><center><b>CENTROS COMUNALES</b></center></div>
+                                                <div class="right col-2"><input type="text" class="form-control"></div>
+                                                <div class="right col-4"><center><b>CUAL</b></center></div>
+                                                <div class=" col-2"><input type="text" class="form-control"></div>
+                                        </div>
+                                    </div>
+                            </div><br>
+
+                            <div class="row left right ">
+                                    <div class="bottom up veri col-12"><center><b>VIVIENDA A LA CUAL ESPERA RETORNAR O REUBICARSE LA FAMILIA</b></center></div>
+                                    <div class="right veri bottom col-2"><center><b>PAGO DE IMPUESTOS</b></center></div>
+                                    <div class="right veri bottom col-2"><input type="text" class="form-control"></div>
+                                    <div class="right veri bottom col-2"><center><b>OTRAS DEUDAS</b></center></div>
+                                    <div class="right veri bottom col-6"><input type="text" class="form-control"></div>
+                                    <div class="right veri bottom col-2"><center><b>TIPO DE TENENCIA</b></center></div>
+                                    <div class="right veri bottom col-2"><input type="text" class="form-control"></div>
+                                    <div class="right veri bottom col-2"><center><b>TIENE DOCUMENTO</b></center></div>
+                                    <div class="right veri bottom col-1"><input type="text" class="form-control"></div>
+                                    <div class=" veri bottom col-1"><center><b>CUAL?</b></center></div>
+                                    <div class=" veri bottom col-4"><input type="text" class="form-control"></div>
+                                    <div class="bottom col-4">
+                                        <div class="row right align-items-center">
+                                            <div class="col-4" >
+                                                <div  class=" row">
+                                                    <div class="veri2 col"><center><b>EN QUE ESTADO EN LA QUE SE ENCUENTRA</b></center></div>
+                                                </div>
+                                            </div>
+                                            <div class="left right col-4" >
+                                                <br><div  class=" row">
+                                                    <div class=" col"><center><b><input type="text" class="form-control"></b></center></div>
+                                                </div><br>
+                                            </div>
+                                            <div class=" col-4" >
+                                                <div  class=" row">
+                                                    <div class="veri col"><center><b>SERVICIOS PÚBLICOS BÁSICOS</b></center></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right veri bottom col-4">
+                                        <div class="row ">
+                                                <div class="veri bottom col-3"><br><center><b>ACUEDUCTO</b></center></div>
+                                                <div class="veri bottom col-3"><input type="text" class="form-control"></div>
+                                                <div class="veri bottom col-3"><br><center><b>ALCANTARILLADO</b></center></div>
+                                                <div class="veri bottom col-3"><input type="text" class="form-control"></div>
+                                        </div>
+                                        <div class="row ">
+                                                <div class="veri col-3"><center><br><b>ENERGÍA</b></center></div>
+                                                <div class="veri col-3"><input type="text" class="form-control"></div>
+                                                <div class="veri col-3"><center><b>POZO SEPTICO</b></center></div>
+                                                <div class="veri col-3"><input type="text" class="form-control"></div>
+                                        </div>
+                                    </div>
+                                    <div class="bottom col-4">
+                                        <div class="row  align-items-center">
+                                            <div class="col-6" >
+                                                <div  class=" row">
+                                                    <div class="veri col"><center><b>SUBSIDIO DE VIVIENDA DURANTE EL DESPLAZAMIENTO</b></center></div>
+                                                </div>
+                                            </div>
+                                            <div class="left  col-6" >
+                                                <br><div  class=" row">
+                                                    <div class=" col"><center><b><input type="text" class="form-control"></b></center></div>
+                                                </div><br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right veri bottom col-2"><br><center><b>OBSERVACIONES</b></center></div>
+                                    <div class=" veri bottom col-10"><textarea style="max-height: 71px; min-height: 71px;" type="text" class="form-control"></textarea></div>
+                            </div><br>
+
+                            <div class="row left right ">
+                                    <div class="bottom up veri col-12"><center><b>PERFIL SOCIOEMPRESARIAL</b></center></div>
+                                    <div class="right veri bottom col-2"><center><b>NIVEL DE ESCOLARIDAD</b></center></div>
+                                    <div class="right veri bottom col-2"><input type="text" class="form-control"></div>
+                                    <div class="right veri bottom col-2"><center><b>AÑO CULMINADO</b></center></div>
+                                    <div class="right veri bottom col-2"><input type="text" class="form-control"></div>
+                                    <div class=" veri bottom col-2"><center><b>AÑOS DE EXPERIENCIA</b></center></div>
+                                    <div class=" veri bottom col-2"><input type="text" class="form-control"></div>
+
+                                    <div class="bottom col-4">
+                                        <div class="row ">
+                                            <center><div class="col-6" ><br>
+                                                <div  class=" row">
+                                                    <div class="col"><b>¿QUE LABORES DESEMPEÑABA ANTES DE DESPLAZARSE?</b></div>
+                                                </div>
+                                            </div></center>
+                                        </div>
+                                    </div>
+                                    <div class="left veri bottom col-8">
+                                        <div class="row ">
+                                                <div class="bottom right col-4"><center><b>AGROPECUARIA</b></center></div>
+                                                <div class="bottom right col-2"><input type="text" class="form-control"></div>
+                                                <div class="bottom right col-4"><center><b> ¿CULTIVOS MÁS IMPORTANTES?</b></center></div>
+                                                <div class="bottom col-2"><input type="text" class="form-control"></div>
+                                        </div>
+                                        <div class="row ">
+                                                <div class="bottom right col-4"><center><b>VENTAS</b></center></div>
+                                                <div class="bottom right col-2"><input type="text" class="form-control"></div>
+                                                <div class="bottom right col-4"><center><b>¿QUE VENDIA?</b></center></div>
+                                                <div class="bottom col-2"><input type="text" class="form-control"></div>
+                                        </div>
+                                        <div class="row ">
+                                                <div class="bottom right col-4"><center><b>SERVICIOS</b></center></div>
+                                                <div class="bottom right col-2"><input type="text" class="form-control"></div>
+                                                <div class="bottom right col-4"><center><b>QUE SERVICIO PRESTABA?</b></center></div>
+                                                <div class="bottom col-2"><input type="text" class="form-control"></div>
+                                        </div>
+                                        <div class="row ">
+                                                <div class="right col-4"><center><b>MANUFACTURA</b></center></div>
+                                                <div class="right col-2"><input type="text" class="form-control"></div>
+                                                <div class="right col-4"><center><b>PRODUCTO ELABORADO?</b></center></div>
+                                                <div class=" col-2"><input type="text" class="form-control"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="right veri bottom col-2"><center><b>TIENE ALGUN TIPO DE FORMACIÓN PARA EL TRABAJO</b></center></div>
+                                    <div class="right veri bottom col-2"><input type="text" class="form-control"></div>
+                                    <div class="right veri bottom col-2"><center><b>¿HA PARTICIPADO EN OTROS PROGRAMAS DE GI?</b></center></div>
+                                    <div class="right veri bottom col-2"><input type="text" class="form-control"></div>
+                                    <div class=" veri bottom col-2"><center><b>¿QUE PROYECTO REALIZO?</b></center></div>
+                                    <div class=" veri bottom col-2"><input type="text" class="form-control"></div>
+
+                                    <div class="bottom col-4">
+                                        <div class="row ">
+                                            <center><div class="col-6" ><br>
+                                                <div  class=" row">
+                                                    <div class="col"><b>¿ QUE OCUPACIÓN TIENE ACTUALMENTE?</b></div>
+                                                </div>
+                                            </div></center>
+                                        </div>
+                                    </div>
+                                    <div class="left veri bottom col-8">
+                                        <div class="row ">
+                                                <div class="bottom right col-4"><center><b>AGROPECUARIA</b></center></div>
+                                                <div class="bottom right col-2"><input type="text" class="form-control"></div>
+                                                <div class="bottom right col-4"><center><b> ¿CULTIVOS MÁS IMPORTANTES?</b></center></div>
+                                                <div class="bottom col-2"><input type="text" class="form-control"></div>
+                                        </div>
+                                        <div class="row ">
+                                                <div class="bottom right col-4"><center><b>VENTAS</b></center></div>
+                                                <div class="bottom right col-2"><input type="text" class="form-control"></div>
+                                                <div class="bottom right col-4"><center><b>¿QUE VENDIA?</b></center></div>
+                                                <div class="bottom col-2"><input type="text" class="form-control"></div>
+                                        </div>
+                                        <div class="row ">
+                                                <div class="bottom right col-4"><center><b>SERVICIOS</b></center></div>
+                                                <div class="bottom right col-2"><input type="text" class="form-control"></div>
+                                                <div class="bottom right col-4"><center><b>QUE SERVICIO PRESTABA?</b></center></div>
+                                                <div class="bottom col-2"><input type="text" class="form-control"></div>
+                                        </div>
+                                        <div class="row ">
+                                                <div class="right col-4"><center><b>MANUFACTURA</b></center></div>
+                                                <div class="right col-2"><input type="text" class="form-control"></div>
+                                                <div class="right col-4"><center><b>PRODUCTO ELABORADO?</b></center></div>
+                                                <div class=" col-2"><input type="text" class="form-control"></div>
+                                        </div>
+                                    </div>
+                            </div><br>
+
+                            <div class="row left right ">
+                                    <div class="bottom up veri col-12"><center><b>RESUMEN VIABILIDAD PROCESO</b></center></div>
+                                    <div class="right  bottom veri col-10"><b>EN LA DESICIÓN DE RETORNAR O REUBICARSE PREDOMINA LA FUERTE INFLUENCIA DE CIERTOS TIPOS DE VIOLENCIA DIRECTA O INDIRECTA, ESTRUCTURAL Y/O CULTURAL</b></div>
+                                    <div class=" bottom col-2"><b><input type="text" class="form-control"></b></div>
+                                    <div class="right  bottom veri col-10"><b>EL GRUPO FAMILIAR CUENTA CON REDES DE APOYO FUERTES EN EL LUGAR DE RETORNO Y REUBICACIÓN</b></div>
+                                    <div class=" bottom col-2"><b><input type="text" class="form-control"></b></div>
+                                    <div class="right  bottom veri col-10"><b>EL GRUPO FAMILIAR CONOCE EL LUGAR DE RETORNO Y REUBICACIÓN Y SU CONTEXTO SOCIOCULTURAL  Y ECONÓMICO</b></div>
+                                    <div class=" bottom col-2"><b><input type="text" class="form-control"></b></div>
+                                    <div class="right  bottom veri col-10"><b>EL GRUPO FAMILIAR TIENE CLARAMENTE ESTABLECIDA SU PROPUESTA PRODUCTIVA</b></div>
+                                    <div class=" bottom col-2"><b><input type="text" class="form-control"></b></div>
+                                    <div class="right  bottom veri col-10"><b>LA PERSONA QUE EFECTUA LA SOLICITUD ESTA EN EL SIPOD</b></div>
+                                    <div class=" bottom col-2"><b><input type="text" class="form-control"></b></div>
+                                    <div class="right  bottom veri col-10"><b>LA SOLICITUD ES REALIZADA POR EL JEFE DE HOGAR DE SIPOD</b></div>
+                                    <div class=" bottom col-2"><b><input type="text" class="form-control"></b></div>
+                                    <div class="right  bottom veri col-10"><b>LA PERSONA QUE EFECTUA LA SOLICITUD TIENE PASO POR MEDELLÍN</b></div>
+                                    <div class=" bottom col-2"><b><input type="text" class="form-control"></b></div>
+                                    <div class="right  bottom veri col-10"><b> EL GRUPO FAMILIAR TIENE CLARAMENTE ESTABLECIDA LA VIVIENDA DE LLEGADA</b></div>
+                                    <div class=" bottom col-2"><b><input type="text" class="form-control"></b></div>
+
+                            </div>                                
 
                         </div>
 
