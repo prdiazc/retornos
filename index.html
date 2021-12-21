@@ -29,7 +29,7 @@
 
   <!--FIN ENLACES -->
 
-<style>
+  <style>
     .up{border-top: 1px solid}
     .bottom{border-bottom: 1px solid}
     .bottom2{border-bottom: 3px solid}
@@ -39,7 +39,8 @@
     .veri2{font-size: 70%}
     .divtitle{background-color:#DCDCDC;}
     .div_color1{background-color:#009999;}
-    
+    .div_color2{background-color:#d9d9d9;}
+    .div_color3{background-color:#f2f2f2;}        
 
 
     p.dotted {border-style: dotted;}
@@ -88,17 +89,17 @@
 
                             <div class="row align-items-start">
                                 <div class="col col-lg-2 " id="divtipo_doc" ><br>
-                                    <label >MEDELL&Iacute;N, </label>
+                                    <label><b>MEDELL&Iacute;N,</b></label>
                                 </div>
                                 <div class="col col-lg-3" id="divnum_doc"><br>
-                                        <input class="form-control" type="date" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                        <input class="form-control bottom2" type="date" id="city1"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
                                         >
                                 </div>
                                 <div class="col" id="divtipo_doc" ><br>
-                                    <label >CENTRO DE ATENCI&Oacute;N A V&Iacute;CTIMAS</label>
+                                    <label><b>CENTRO DE ATENCI&Oacute;N A V&Iacute;CTIMAS</b></label>
                                 </div>
                                 <div class="col" id="divnum_doc"><br>
-                                        <input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                        <input class="form-control bottom2" type="text" id="atencion1"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
                                         >
                                 <br>
                                 </div>
@@ -113,7 +114,7 @@
 
                             <div class="row align-items-start"><br>
                                 &nbsp;&nbsp; Yo, <div class="col-lg-4"><br>
-                                <input class="form-control bottom2" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                <input class="form-control bottom2" type="text" id="nombres"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
                                         >
                                 </div><br>
                                 &nbsp; identificado (a) con cédula número, <div class="col-lg-3"><br>
@@ -121,157 +122,167 @@
                                         >
                                 </div><br>
                                 &nbsp; con fecha de nacimiento, <div class="col-lg-4">
-                                <br><input class="form-control bottom2" type="date" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                <br><input class="form-control bottom2" type="date" id="vfechanac"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
                                         >
                                 </div>
                             </div>
                             <br>
 
                             <div class="row row-cols-2 row-cols-lg-3">
-                                <div style='border: 2px solid' class="col-4 col-lg-12"><center>CONDICION DIFERENCIAL<center></div>
-                                <div class="left right bottom col-lg-3">GRUPO ETNICO</div>
-                                <div class="bottom right col-4 col-lg-4"><center>elige</center></div>
-                                <div class="bottom  col-lg-1">CUAL?</div>
-                                <div class="bottom right left col-lg-4"></div>
+                                <div style='border: 2px solid' class="div_color2 col-4 col-lg-12"><center><b>CONDICION DIFERENCIAL</b><center></div>
+                                <div class="div_color3 left right bottom col-lg-3">GRUPO ETNICO</div>
+                                <div class="bottom right col-4 col-lg-4">
+                                    <center>
+                                        <select name="" id="vetnia" class="form-select" >
+                                            <option value="">SELECCIONA</option>
+                                            <option value="GITANO/ROOM">GITANO/ROOM</option>
+                                            <option value="AFROCOLOMBIANO">AFROCOLOMBIANO</option>
+                                            <option value="OTRO">OTRO</option>
+                                            <option value="NINGUNO">NINGUNO</option>
+                                        </select>
+                                    </center>
+                                </div>
+                                <div class="div_color3 bottom  col-lg-1">CUAL?</div>
+                                <div class="bottom right left col-lg-4"><input type="text" class="form-control"></div>
                             </div>
                             <hr>
                             <div class="row row-cols-3 row-cols-lg-3">
-                                <div class="left up right col-4 col-lg-2"><center>CONDICIÓN</center></div>
+                                <div class="div_color3 left up right col-4 col-lg-2"><center>CONDICIÓN</center></div>
                                 <div class="up bottom right col-4 col-lg-4">CABEZA DE HOGAR ADULTO MAYOR</div>
-                                <div class="up bottom right col-4 col-lg-1"><input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></div>
+                                <div class="up bottom right col-4 col-lg-1"><input class="form-control" type="text" id="condi1"  onkeypress="return SoloNumeros(event)" required  name=""></div>
                                 <div class="up bottom right col-4 col-lg-4">CABEZA DE HOGAR MENOR DE EDAD</div>
-                                <div class="up bottom right col-4 col-lg-1"><input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></div>
-                                <div class="left right col-4 col-lg-2"><center>DIFERENCIAL</center></div>
+                                <div class="up bottom right col-4 col-lg-1"><input class="form-control" type="text" id="condi2"  onkeypress="return SoloNumeros(event)" required  name=""></div>
+                                <div class="div_color3 left right col-4 col-lg-2"><center>DIFERENCIAL</center></div>
                                 <div class="right bottom col-4 col-lg-4">MUJER CABEZA DE HOGAR</div>
-                                <div class="right bottom col-4 col-lg-1"><input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></div>
+                                <div class="right bottom col-4 col-lg-1"><input class="form-control" type="text" id="condi3"  onkeypress="return SoloNumeros(event)" required  name=""></div>
                                 <div class="right bottom col-4 col-lg-4">GRUPO ETNICO</div>
-                                <div class="right bottom col-4 col-lg-1"><input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></div>
-                                <div class="left right col-4 col-lg-2"><center>FAMILIAR</center></div>
+                                <div class="right bottom col-4 col-lg-1"><input class="form-control" type="text" id="condi4"  onkeypress="return SoloNumeros(event)" required  name=""></div>
+                                <div class="div_color3 left right col-4 col-lg-2"><center>FAMILIAR</center></div>
                                 <div class="right bottom col-4 col-lg-4">ADULTO MAYOR UNIPERSONAL</div>
-                                <div class="right bottom col-4 col-lg-1"><input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></div>
+                                <div class="right bottom col-4 col-lg-1"><input class="form-control" type="text" id="condi5"  onkeypress="return SoloNumeros(event)" required  name=""></div>
                                 <div class="right bottom col-4 col-lg-4">NINGUNA</div>
-                                <div class="right bottom col-4 col-lg-1"><input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></div>
-                                <div class="bottom left right col-4 col-lg-2"></div>
+                                <div class="right bottom col-4 col-lg-1"><input class="form-control" type="text" id="condi6"  onkeypress="return SoloNumeros(event)" required  name=""></div>
+                                <div class="div_color3 bottom left right col-4 col-lg-2"></div>
                                 <div class="bottom right col-4 col-lg-4">CABEZA DE HOGAR DISCAPACITADO</div>
-                                <div class="bottom right col-4 col-lg-1"><input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></div>
+                                <div class="bottom right col-4 col-lg-1"><input class="form-control" type="text" id="condi7"  onkeypress="return SoloNumeros(event)" required  name=""></div>
                                 <div class="bottom right col-4 col-lg-4">OTRO,  CUAL?</div>
-                                <div class="bottom right col-4 col-lg-1"><input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></div>
+                                <div class="bottom right col-4 col-lg-1"><input class="form-control" type="text" id="condi8"  onkeypress="return SoloNumeros(event)" required  name=""></div>
                             </div>
                             <hr><hr>
 
                             <div class="row row-cols-2 row-cols-lg-5">
-                                <div style='border: 2px solid' class="col-lg-12"><center>INFORMACION  DESPLAZAMIENTO<center></div>
-                                <div class="left right col"><center><b>FECHA DE LOS HECHOS</b></center></div>
-                                <div class="right col"><center><b>DEPARTAMENTO</b></center></div>
-                                <div class="right col"><center><b>MUNICIPIO</b></center></div>
-                                <div class="right col"><center><b>TIPO ENTORNO</b></center></div>
-                                <div class="right col"><center><b>NOMBRE ENTORNO</b></center></div>
-                                <div class="left right bottom col"><center><input class="form-control" type="date" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></center></div>
-                                <div class="right bottom col"><center><input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></center></div>
-                                <div class="right bottom col"><center><input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></center></div>
-                                <div class="right bottom col"><center><input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></center></div>
-                                <div class="right bottom col"><center><input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></center></div>
+                                <div style='border: 2px solid' class="div_color2 col-lg-12"><center><b>INFORMACION  DESPLAZAMIENTO</b><center></div>
+                                <div class="div_color3 left right col"><center>FECHA DE LOS HECHOS</center></div>
+                                <div class="div_color3 right col"><center>DEPARTAMENTO</center></div>
+                                <div class="div_color3 right col"><center>MUNICIPIO</center></div>
+                                <div class="div_color3 right col"><center>TIPO ENTORNO</center></div>
+                                <div class="div_color3 right col"><center>NOMBRE ENTORNO</center></div>
+                                <div class="left right bottom col"><center><input class="form-control" type="date" id="fechahecho"  onkeypress="return SoloNumeros(event)" required  name=""></center></div>
+                                <div class="right bottom col"><center><input class="form-control" type="text" id="dpto"  onkeypress="return SoloNumeros(event)" required  name=""></center></div>
+                                <div class="right bottom col"><center><input class="form-control" type="text" id="mun"  onkeypress="return SoloNumeros(event)" required  name=""></center></div>
+                                <div class="right bottom col"><center><input class="form-control" type="text" id="tipo_entorno"  onkeypress="return SoloNumeros(event)" required  name=""></center></div>
+                                <div class="right bottom col"><center><input class="form-control" type="text" id="nombre_entorno"  onkeypress="return SoloNumeros(event)" required  name=""></center></div>
                             </div>
                             <div class="row row-cols-2 ">
-                                <div class="left right col-2"><center><b>ESTADO RUV</b></center></div>
-                                <div class="right col-2"><center><b>CÓDIGO RUV</b></center></div>
-                                <div class="right col-2"><center><b>FECHA VALORACIÓN</b></center></div>
-                                <div class="right veri col-3"><center><b>NÚMERO DE PERSONAS QUE INTEGRAN EL GRUPO FAMILIAR</b></center></div>
-                                <div class="right veri col-3"><center><b>NÚMERO DE PERSONAS MENORES DE 18 AÑOS QUE INTEGRAN EL NUCLEO FAMILIAR</b></center></div>
-                                <div class="left right bottom col-2"><center><input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></center></div>
-                                <div class="right bottom col-2"><center><input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></center></div>
-                                <div class="right bottom col-2"><center><input class="form-control" type="daTe" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></center></div>
-                                <div class="right bottom col-3"><center><input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></center></div>
-                                <div class="right bottom col-3"><center><input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required  name=""></center></div>
+                                <div class="div_color3 left right col-2"><center>ESTADO RUV</center></div>
+                                <div class="div_color3 right col-2"><center>CÓDIGO RUV</center></div>
+                                <div class="div_color3 right col-2"><center>FECHA VALORACIÓN</center></div>
+                                <div class="div_color3 right veri col-3"><center>NÚMERO DE PERSONAS QUE INTEGRAN EL GRUPO FAMILIAR</center></div>
+                                <div class="div_color3 right veri col-3"><center>NÚMERO DE PERSONAS MENORES DE 18 AÑOS QUE INTEGRAN EL NUCLEO FAMILIAR</center></div>
+                                <div class="left right bottom col-2"><center><input class="form-control" type="text" id="estadoruv"  onkeypress="return SoloNumeros(event)" required  name=""></center></div>
+                                <div class="right bottom col-2"><center><input class="form-control" type="text" id="codruv"  onkeypress="return SoloNumeros(event)" required  name=""></center></div>
+                                <div class="right bottom col-2"><center><input class="form-control" type="daTe" id="fecha_val"  onkeypress="return SoloNumeros(event)" required  name=""></center></div>
+                                <div class="right bottom col-3"><center><input class="form-control" type="text" id="numpersi"  onkeypress="return SoloNumeros(event)" required  name=""></center></div>
+                                <div class="right bottom col-3"><center><input class="form-control" type="text" id="num_menores"  onkeypress="return SoloNumeros(event)" required  name=""></center></div>
                             </div>
                             <hr><hr>
 
                             <div class="row row-cols-6">
-                                <div style='border: 2px solid' class="col-lg-12"><center>MOTIVOS DE DESPLAZAMIENTO<center></div>
-                                <div class="left veri right col-1"><center><b>HOMICIDIO</b></center></div>
-                                <div class="right veri col-1"><center><b >AMENAZAS</b></center></div>
-                                <div class="right veri col-2"><center><b>ENFRENTAMIENTO</b></center></div>
-                                <div class="right veri col-1"><center><b>ASPERCION</b></center></div>
-                                <div class="right veri col-3"><center><b>RIESGO O RECLUTAMIENTO FORZADO</b></center></div>
-                                <div class="right veri col-2"><center><b>DESAPARICION FORZADA</b></center></div>
-                                <div class="right veri col-1"><center><b>MIEDO</b></center></div>
-                                <div class="right veri col-1"><center><b>VIOLENCIA SEXUAL</b></center></div>
-                                <div class="left right bottom col-1"><input class="form-control"></div>
-                                <div class="right bottom col-1"><input class="form-control"></div>
-                                <div class="right bottom col-2"><input class="form-control"></div>
-                                <div class="right bottom col-1"><input class="form-control"></div>
-                                <div class="right bottom col-3"><input class="form-control"></div>
-                                <div class="right bottom col-2"><input class="form-control"></div>
-                                <div class="right bottom col-1"><input class="form-control"></div>
-                                <div class="right bottom col-1"><input class="form-control"></div>
-                                <div style='solid' class="left bottom right col-lg-1"><center>OTRO<center></div>
-                                <div style='solid' class="bottom right col-lg-11"><center><center></div>
-                                <div style='solid' class="left bottom right col-lg-2"><center>OBSERVACION<center></div>
-                                <div style='solid' class="bottom right col-lg-10"><center><center></div>
+                                <div style='border: 2px solid' class="div_color2 col-lg-12"><center><b>MOTIVOS DE DESPLAZAMIENTO</b><center></div>
+                                <div class="div_color3 left veri right col-1"><center>HOMICIDIO</center></div>
+                                <div class="div_color3 right veri col-1"><center>AMENAZAS</center></div>
+                                <div class="div_color3 right veri col-2"><center>ENFRENTAMIENTO</center></div>
+                                <div class="div_color3 right veri col-1"><center>ASPERCION</center></div>
+                                <div class="div_color3 right veri col-3"><center>RIESGO O RECLUTAMIENTO FORZADO</center></div>
+                                <div class="div_color3 right veri col-2"><center>DESAPARICION FORZADA</center></div>
+                                <div class="div_color3 right veri col-1"><center>MIEDO</center></div>
+                                <div class="div_color3 right veri col-1"><center>VIOLENCIA SEXUAL</center></div>
+                                <div class="left right bottom col-1"><input id='mot_homicidio' class="form-control"></div>
+                                <div class="right bottom col-1"><input id='mot_amena' class="form-control"></div>
+                                <div class="right bottom col-2"><input id='mot_enfren' class="form-control"></div>
+                                <div class="right bottom col-1"><input id='mot_asper' class="form-control"></div>
+                                <div class="right bottom col-3"><input id='mot_riesgo' class="form-control"></div>
+                                <div class="right bottom col-2"><input id='mot_desapar' class="form-control"></div>
+                                <div class="right bottom col-1"><input id='mot_miedo' class="form-control"></div>
+                                <div class="right bottom col-1"><input id='mot_violencia_s' class="form-control"></div>
+                                <div style='solid' class="div_color3 left bottom right col-lg-1"><center>OTRO<center></div>
+                                <div style='solid' class="bottom right col-lg-11"><input id="mot_otro"></div>
+                                <div style='solid' class="div_color3 left bottom right col-lg-2"><center>OBSERVACION<center></div>
+                                <div style='solid' class="bottom right col-lg-10"><input id='mot_observa'></div>
                             </div>
 
                             <div class="row align-items-start"><br>
                                 &nbsp;&nbsp; Me permito solicitar acompañamiento al proceso de, <div class="col-lg-4"><br>
-                                <input class="form-control bottom2 " type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                <input class="form-control bottom2 " type="text" id="v_proceso"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
                                         >
                                 </div>
                             </div>
                             <div class="row align-items-start"><br>
                                 &nbsp; para el municipio de, <div class="col-lg-3"><br>
-                                <input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                <input class="bottom2 form-control" type="text" id="res_muni"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
                                         >
                                 </div><br>
                                 &nbsp; ubicado en el departamento de, <div class="col-lg-4">
-                                <br><input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                <br><input class="bottom2 form-control" type="text" id="res_dpto"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
                                         >
                                 </div>
                             </div>
                             <div class="row align-items-start"><br>
                                 <br>
                                 &nbsp;&nbsp; Zona, <div class="col-lg-2"><br>
-                                <input class="form-control " type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                <input class="bottom2 form-control " type="text" id="res_zona"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
                                         >
                                 </div><br>
                                 &nbsp; Comunidad, <div class="col-lg-2"><br>
-                                <input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                <input class="bottom2 form-control" type="text" id="res_comunidad"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
                                         >
                                 </div><br>
                                 &nbsp; Barrio, <div class="col-lg-1">
-                                <br><input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                <br><input class="bottom2 form-control" type="text" id="res_barrio"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
                                         >
                                 </div><br>
                                 &nbsp;&nbsp; Vereda, <div class="col-lg-1"><br>
-                                <input class="form-control  " type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                <input class="bottom2 form-control  " type="text" id="res_vda"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
                                         >
                                 </div><br>
                                 &nbsp; Corregimiento, <div class="col-lg-1"><br>
-                                <input class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                <input class="bottom2 form-control" type="text" id="res_cgto"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
                                         >
                                 </div>
                             </div><br>
 
                             <div class="row row-cols-6">
-                                <div style='border: 2px solid' class="col-lg-12"><center>MOTIVOS DE RETORNO<center></div>
-                                <div class="left bottom veri right col-3"><center><b>PORQUE ALLÍ SE ENCUENTRA SU FAMILIA Y ES EL LUGAR DONDE TIENE SUS AFECTOS</center></b></div>
-                                <div class="right bottom veri col-1"><center><input class="form-control"></center></div>
-                                <div class="right bottom veri col-3"><center><b>DESEMPLEO O DIFICULTAD ECONOMICA</b></center></div>
-                                <div class="right bottom veri col-1"><center><input class="form-control"></center></div>
-                                <div class="right bottom veri col-3"><center><b>PORQUE ALLI SE ENCUENTRA MEJOES CONDICIONES DE VIDA</b></center></div>
-                                <div class="right bottom veri col-1"><center><input class="form-control"></center></div>
-                                <div class="left veri bottom right col-3"><center><b>INSEGURIDAD</center></b></div>
-                                <div class="right veri bottom col-1"><center><input class="form-control"></center></div>
-                                <div class="right veri bottom col-3"><center><b>RIESGO O RECLUTAMIENTO FORZADO</b></center></div>
-                                <div class="right veri bottom col-1"><center><input class="form-control"></center></div>
-                                <div class="right veri bottom col-3"><center><b>OTRO</b></center></div>
-                                <div class="right veri bottom col-1"><center><input class="form-control"></center></div>
-                                <div class="left bottom veri right col-3"><center><b>ARRAIGO</center></b></div>
-                                <div class="right bottom veri col-1"><center><input class="form-control"></center></div>
-                                <div class="right bottom veri col-3"><center><b>AMENAZAS</b></center></div>
-                                <div class="right bottom veri col-1"><center><input class="form-control"></center></div>
-                                <div class="right bottom veri col-2"><center><b>CUÁL</b></center></div>
-                                <div class="right bottom veri col-2"><center><input class="form-control"></center></div>
-                                <div style='solid' class="left bottom right col-lg-2"><center>OBSERVACION<center></div>
-                                <div style='solid' class="bottom right col-lg-10"><center><center></div>
+                                <div style='border: 2px solid' class="div_color2 col-lg-12"><center><b>MOTIVOS DE RETORNO</b><center></div>
+                                <div class="div_color3 left bottom veri right col-3"><center>PORQUE ALLÍ SE ENCUENTRA SU FAMILIA Y ES EL LUGAR DONDE TIENE SUS AFECTOS</center></div>
+                                <div class="right bottom veri col-1"><center><input id="retorno_op1" class="form-control"></center></div>
+                                <div class="div_color3 right bottom veri col-3"><center>DESEMPLEO O DIFICULTAD ECONOMICA</center></div>
+                                <div class="right bottom veri col-1"><center><input id="retorno_op2" class="form-control"></center></div>
+                                <div class="div_color3 right bottom veri col-3"><center>PORQUE ALLI SE ENCUENTRA MEJOES CONDICIONES DE VIDA</center></div>
+                                <div class="right bottom veri col-1"><center><input id="retorno_op3" class="form-control"></center></div>
+                                <div class="div_color3 left veri bottom right col-3"><center>INSEGURIDAD</center></div>
+                                <div class="right veri bottom col-1"><center><input id="retorno_op4" class="form-control"></center></div>
+                                <div class="div_color3 right veri bottom col-3"><center>RIESGO O RECLUTAMIENTO FORZADO</center></div>
+                                <div class="right veri bottom col-1"><center><input id="retorno_op5" class="form-control"></center></div>
+                                <div class="div_color3 right veri bottom col-3"><center>OTRO</center></div>
+                                <div class="right veri bottom col-1"><center><input id="retorno_op6" class="form-control"></center></div>
+                                <div class="div_color3 left bottom veri right col-3"><center>ARRAIGO</center></div>
+                                <div class="right bottom veri col-1"><center><input id="retorno_op7" class="form-control"></center></div>
+                                <div class="div_color3 right bottom veri col-3"><center>AMENAZAS</center></div>
+                                <div class="right bottom veri col-1"><center><input id="retorno_op8" class="form-control"></center></div>
+                                <div class="div_color3 right bottom veri col-2"><center>CUÁL</center></div>
+                                <div class="right bottom veri col-2"><center><input id="retorno_op9" class="form-control"></center></div>
+                                <div class="div_color3 left bottom right col-lg-2"><center>OBSERVACION<center></div>
+                                <div class="bottom right col-lg-10"><center><textarea name="" id="retorno_observ" style="max-height: 45px; min-height: 45px;" class="form-control"></textarea><center></div>
                             </div>
 
                             <div class="row align-items-start"><br>
@@ -279,80 +290,80 @@
                             </div>
 
                             <div class="row row-cols-5">
-                                <div class="left up bottom veri right col-3"><center><b>NOMBRES Y APELLIDOS</center></b></div>
-                                <div class="right up bottom veri col-2"><center><b>DOCUMENTO DE IDENTIDAD</b></center></div>
-                                <div class="right up bottom veri col-1"><center><b>EDAD</b></center></div>
-                                <div class="right up bottom veri col-3"><center><b>PARENTESCO</b></center></div>
-                                <div class="right up bottom veri col-3"><center><b>INCLUIDO</b></center></div>
-                                <div class="left bottom veri right col-3"><center><b><input class="form-control"></center></b></div>
-                                <div class="right bottom veri col-2"><center><b><input class="form-control"></b></center></div>
-                                <div class="right bottom veri col-1"><center><b><input class="form-control"></b></center></div>
-                                <div class="right bottom veri col-3"><center><b><input class="form-control"></b></center></div>
-                                <div class="right bottom veri col-3"><center><b><input class="form-control"></b></center></div>
-                                <div class="left bottom veri right col-3"><center><b><input class="form-control"></center></b></div>
-                                <div class="right bottom veri col-2"><center><b><input class="form-control"></b></center></div>
-                                <div class="right bottom veri col-1"><center><b><input class="form-control"></b></center></div>
-                                <div class="right bottom veri col-3"><center><b><input class="form-control"></b></center></div>
-                                <div class="right bottom veri col-3"><center><b><input class="form-control"></b></center></div>
-                                <div class="left bottom veri right col-3"><center><b><input class="form-control"></center></b></div>
-                                <div class="right bottom veri col-2"><center><b><input class="form-control"></b></center></div>
-                                <div class="right bottom veri col-1"><center><b><input class="form-control"></b></center></div>
-                                <div class="right bottom veri col-3"><center><b><input class="form-control"></b></center></div>
-                                <div class="right bottom veri col-3"><center><b><input class="form-control"></b></center></div>
-                                <div class="left bottom veri right col-3"><center><b><input class="form-control"></center></b></div>
-                                <div class="right bottom veri col-2"><center><b><input class="form-control"></b></center></div>
-                                <div class="right bottom veri col-1"><center><b><input class="form-control"></b></center></div>
-                                <div class="right bottom veri col-3"><center><b><input class="form-control"></b></center></div>
-                                <div class="right bottom veri col-3"><center><b><input class="form-control"></b></center></div>
-                                <div class="left bottom veri right col-3"><center><b><input class="form-control"></center></b></div>
-                                <div class="right bottom veri col-2"><center><b><input class="form-control"></b></center></div>
-                                <div class="right bottom veri col-1"><center><b><input class="form-control"></b></center></div>
-                                <div class="right bottom veri col-3"><center><b><input class="form-control"></b></center></div>
-                                <div class="right bottom veri col-3"><center><b><input class="form-control"></b></center></div>
-                                <div class="left bottom veri right col-3"><center><b><input class="form-control"></center></b></div>
-                                <div class="right bottom veri col-2"><center><b><input class="form-control"></b></center></div>
-                                <div class="right bottom veri col-1"><center><b><input class="form-control"></b></center></div>
-                                <div class="right bottom veri col-3"><center><b><input class="form-control"></b></center></div>
-                                <div class="right bottom veri col-3"><center><b><input class="form-control"></b></center></div>
-                                <div class="left bottom veri right col-3"><center><b><input class="form-control"></center></b></div>
-                                <div class="right bottom veri col-2"><center><b><input class="form-control"></b></center></div>
-                                <div class="right bottom veri col-1"><center><b><input class="form-control"></b></center></div>
-                                <div class="right bottom veri col-3"><center><b><input class="form-control"></b></center></div>
-                                <div class="right bottom veri col-3"><center><b><input class="form-control"></b></center></div>
-                                <div class="left bottom veri right col-3"><center><b><input class="form-control"></center></b></div>
-                                <div class="right bottom veri col-2"><center><b><input class="form-control"></b></center></div>
-                                <div class="right bottom veri col-1"><center><b><input class="form-control"></b></center></div>
-                                <div class="right bottom veri col-3"><center><b><input class="form-control"></b></center></div>
-                                <div class="right bottom veri col-3"><center><b><input class="form-control"></b></center></div>
+                                <div class="div_color3 left up bottom veri right col-3"><center><b>NOMBRES Y APELLIDOS</center></b></div>
+                                <div class="div_color3 right up bottom veri col-2"><center><b>DOCUMENTO DE IDENTIDAD</b></center></div>
+                                <div class="div_color3 right up bottom veri col-1"><center><b>EDAD</b></center></div>
+                                <div class="div_color3 right up bottom veri col-3"><center><b>PARENTESCO</b></center></div>
+                                <div class="div_color3 right up bottom veri col-3"><center><b>INCLUIDO</b></center></div>
+                                <div class="left bottom veri right col-3"><center><b><input id="ac_nomint1" class="form-control"></center></b></div>
+                                <div class="right bottom veri col-2"><center><b><input id="ac_docint1" class="form-control"></b></center></div>
+                                <div class="right bottom veri col-1"><center><b><input id="ac_edadint1" class="form-control"></b></center></div>
+                                <div class="right bottom veri col-3"><center><b><input id="ac_parentescoint1" class="form-control"></b></center></div>
+                                <div class="right bottom veri col-3"><center><b><input id="ac_incluidoint1" class="form-control"></b></center></div>
+                                <div class="left bottom veri right col-3"><center><b><input id="ac_nomint2" class="form-control"></center></b></div>
+                                <div class="right bottom veri col-2"><center><b><input id="ac_docint2" class="form-control"></b></center></div>
+                                <div class="right bottom veri col-1"><center><b><input id="ac_edadint2" class="form-control"></b></center></div>
+                                <div class="right bottom veri col-3"><center><b><input id="ac_parentescoint2" class="form-control"></b></center></div>
+                                <div class="right bottom veri col-3"><center><b><input id="ac_incluidoint2" class="form-control"></b></center></div>
+                                <div class="left bottom veri right col-3"><center><b><input id="ac_nomint3" class="form-control"></center></b></div>
+                                <div class="right bottom veri col-2"><center><b><input id="ac_docint3" class="form-control"></b></center></div>
+                                <div class="right bottom veri col-1"><center><b><input id="ac_edadint3" class="form-control"></b></center></div>
+                                <div class="right bottom veri col-3"><center><b><input id="ac_parentescoint3" class="form-control"></b></center></div>
+                                <div class="right bottom veri col-3"><center><b><input id="ac_incluidoint3" class="form-control"></b></center></div>
+                                <div class="left bottom veri right col-3"><center><b><input id="ac_nomint4" class="form-control"></center></b></div>
+                                <div class="right bottom veri col-2"><center><b><input id="ac_docint4" class="form-control"></b></center></div>
+                                <div class="right bottom veri col-1"><center><b><input id="ac_edadint4" class="form-control"></b></center></div>
+                                <div class="right bottom veri col-3"><center><b><input id="ac_parentescoint4" class="form-control"></b></center></div>
+                                <div class="right bottom veri col-3"><center><b><input id="ac_incluidoint4" class="form-control"></b></center></div>
+                                <div class="left bottom veri right col-3"><center><b><input id="ac_nomint5" class="form-control"></center></b></div>
+                                <div class="right bottom veri col-2"><center><b><input id="ac_docint5" class="form-control"></b></center></div>
+                                <div class="right bottom veri col-1"><center><b><input id="ac_edadint5" class="form-control"></b></center></div>
+                                <div class="right bottom veri col-3"><center><b><input id="ac_parentescoint5" class="form-control"></b></center></div>
+                                <div class="right bottom veri col-3"><center><b><input id="ac_incluidoint5" class="form-control"></b></center></div>
+                                <div class="left bottom veri right col-3"><center><b><input id="ac_nomint6" class="form-control"></center></b></div>
+                                <div class="right bottom veri col-2"><center><b><input id="ac_docint6" class="form-control"></b></center></div>
+                                <div class="right bottom veri col-1"><center><b><input id="ac_edadint6" class="form-control"></b></center></div>
+                                <div class="right bottom veri col-3"><center><b><input id="ac_parentescoint6" class="form-control"></b></center></div>
+                                <div class="right bottom veri col-3"><center><b><input id="ac_incluidoint6" class="form-control"></b></center></div>
+                                <div class="left bottom veri right col-3"><center><b><input id="ac_nomint7" class="form-control"></center></b></div>
+                                <div class="right bottom veri col-2"><center><b><input id="ac_docint7" class="form-control"></b></center></div>
+                                <div class="right bottom veri col-1"><center><b><input id="ac_edadint7" class="form-control"></b></center></div>
+                                <div class="right bottom veri col-3"><center><b><input id="ac_parentescoint7" class="form-control"></b></center></div>
+                                <div class="right bottom veri col-3"><center><b><input id="ac_incluidoint7" class="form-control"></b></center></div>
+                                <div class="left bottom veri right col-3"><center><b><input id="ac_nomint8" class="form-control"></center></b></div>
+                                <div class="right bottom veri col-2"><center><b><input id="ac_docint8" class="form-control"></b></center></div>
+                                <div class="right bottom veri col-1"><center><b><input id="ac_edadint8" class="form-control"></b></center></div>
+                                <div class="right bottom veri col-3"><center><b><input id="ac_parentescoint8" class="form-control"></b></center></div>
+                                <div class="right bottom veri col-3"><center><b><input id="ac_incluidoint8" class="form-control"></b></center></div>
 
                             </div>
 
                             <div class="row align-items-start"><br>
                                 &nbsp;&nbsp; Mi red Familiar y/o social, corresponde a, <div class="col-lg-4"><br>
-                                <input class="form-control bottom2" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                <input class="form-control bottom2" type="text" id="nombre_redfam"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
                                         >
                                 </div><br>
                                 &nbsp; Parentesco, <div class="col-lg-3"><br>
-                                <input class="form-control bottom2" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                <input class="form-control bottom2" type="text" id="parentesco_redfam"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
                                         >
                                 </div>
 
                             </div>
                             <div class="row align-items-start"><br>
                                 &nbsp; Su dirección es, <div class="col-lg-3"><br>
-                                <input class="form-control bottom2" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                <input class="form-control bottom2" type="text" id="dir_redfam"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
                                         >
                                 </div><br>
                                 &nbsp; teléfono, <div class="col-lg-3">
-                                <br><input class="form-control bottom2" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                <br><input class="form-control bottom2" type="text" id="tel_redfam"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
                                         >
                                 </div><br>
                                 &nbsp; y  <div class="col-lg-3">
-                                <br><input class="form-control bottom2" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                <br><input class="form-control bottom2" type="text" id="y_redfam"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
                                         >
                                 </div><br>
                                 &nbsp; La vivienda a la que llego es <div class="col-lg-3">
-                                <br><input class="form-control bottom2" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                <br><input class="form-control bottom2" type="text" id="vivienda_redfam"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
                                         >
                                 </div>
 
@@ -361,27 +372,27 @@
                             <div class="row align-items-start"><br>
                                 &nbsp;&nbsp; La actividad económica que deseo realizar en el lugar de llegada es:
                             </div>
-                            <div class="col-lg-12">
-                            <textarea style="min-width:100%; max-width:100%; max-height:100px; min-height:100px" class="form-control" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                            <div  class="col-lg-12">
+                                <textarea style="min-width:100%; max-width:100%; max-height:100px; min-height:100px" class="bottom2 up left rigth form-control" type="text" id="actividad_econ"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
                                     ></textarea>
                             </div><br>
                             <div class="row align-items-start"><br>
                                 &nbsp;&nbsp; Mi familia contará con otra fuente de generación de ingresos, diferente al plan<br>&nbsp;&nbsp;&nbsp;productivo, <div class="col-lg-1"><br>
-                                <input class="form-control bottom2" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                <input class="form-control bottom2" type="text" id="fam_fuente_empleo"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
                                         >
                                 </div><br>
                                 &nbsp; Cuál <div class="col-lg-4"><br>
-                                <input class="form-control bottom2" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                <input class="form-control bottom2" type="text" id="fam_cual_empleo"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
                                         >
                                 </div>
                             </div>
                             <div class="row align-items-start"><br>
                                 &nbsp; CONCEPTO DE SEGURIDAD<div class="col-lg-4"><br>
-                                <input class="form-control bottom2" type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                <input class="form-control bottom2" type="text" id="concepto_seguridad"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
                                         >
                                 </div><br>
                                 &nbsp; FECHA DE VENCIMIENTO<div class="col-lg-3">
-                                <br><input class="form-control bottom2" type="date" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                <br><input class="form-control bottom2" type="date" id="fecha_vencimiento"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
                                         >
                                 </div>
                             </div>
@@ -394,63 +405,63 @@
                                 <div class="row align-items-start">
                                     <div class="col-lg-2">&nbsp;&nbsp; FIRMA </div> 
                                     <div class="col-lg-4">
-                                    <input class="form-control bottom2 " type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                    <input class="form-control bottom2 " type="text" id="firma_titular"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
                                             >
                                     </div>
                                 </div>
                                 <div class="row align-items-start">
                                     <div class="col-lg-2">&nbsp;&nbsp; NOMBRE </div> 
                                     <div class="col-lg-4">
-                                    <input class="form-control bottom2 " type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                    <input class="form-control bottom2 " type="text" id="nombre_titular"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
                                             >
                                     </div>
                                 </div>
                                 <div class="row align-items-start">
                                     <div class="col-lg-2">&nbsp;&nbsp; CÉDULA </div> 
                                     <div class="col-lg-4">
-                                    <input class="form-control bottom2 " type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                    <input class="form-control bottom2 " type="text" id="doc_titular"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
                                             >
                                     </div>
                                 </div>
                                 <div class="row align-items-start">
                                     <div class="col-lg-2">&nbsp;&nbsp; DIRECCION </div> 
                                     <div class="col-lg-4">
-                                    <input class="form-control bottom2 " type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                    <input class="form-control bottom2 " type="text" id="dir_titular"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
                                             >
                                     </div>
                                 </div>
                                 <div class="row align-items-start">
                                     <div class="col-lg-2">&nbsp;&nbsp; BARRIO </div> 
                                     <div class="col-lg-4">
-                                    <input class="form-control bottom2 " type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                    <input class="form-control bottom2 " type="text" id="barrio_titular"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
                                             >
                                     </div>
                                 </div>
                                 <div class="row align-items-start">
                                     <div class="col-lg-2">&nbsp;&nbsp; TELEFONO </div> 
                                     <div class="col-lg-4">
-                                    <input class="form-control bottom2 " type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                    <input class="form-control bottom2 " type="text" id="tel_titular"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
                                             >
                                     </div>
                                 </div>
                                 <div class="row align-items-start">
                                     <div class="col-lg-2">&nbsp;&nbsp; CELULAR </div> 
                                     <div class="col-lg-4">
-                                    <input class="form-control bottom2 " type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                    <input class="form-control bottom2 " type="text" id="cel_titular"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
                                             >
                                     </div>
                                 </div><br><br>
                                 <div class="row align-items-start">
                                     <div class="col-lg-2">&nbsp;&nbsp; INICIA PROCESO </div> 
                                     <div class="col-lg-1">
-                                    <input class="form-control bottom2 " type="text" id="vnum_doc"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
+                                    <input class="form-control bottom2 " type="text" id="procces_start_titular"  onkeypress="return SoloNumeros(event)" required onblur="validadoc()" onblur="verificacampo('vnum_doc')"  onchange="paso1hogar('divnum_doc','vnum_doc')"  name="vnum_doc"
                                             >
                                     </div>
                                 </div><br>
                                 <div class="row align-items-start">
                                     <div class="col-lg-3">&nbsp;&nbsp; PERSONA QUE RECIBE </div> 
                                     <div class="col-lg-4">
-                                    <input class="form-control bottom2 " type="text" id="recibe"  required onblur="siguiente()"  name="vnum_doc"
+                                    <input class="form-control bottom2 " type="text" id="recibe_encuesta"  required onblur="siguiente()"  name="vnum_doc"
                                             >
                                     </div>
                                 </div>
@@ -489,31 +500,31 @@
                             </div>
                             <br>
                             <div class="row ">
-                                <div class="left veri bottom up right col-2"><center><b>FECHA DE CARACTERIZACION</b></center></div>
+                                <div class="div_color3 left veri bottom up right col-2"><center><b>FECHA DE CARACTERIZACION</b></center></div>
                                 <div class="right up bottom veri col-2"><center><b ><input type="date" class="form-control"></b></center></div>
-                                <div class="right bottom up veri col-2"><center><b>LUGAR DE DESPLAZAMIENTO</b></center></div>
+                                <div class="div_color3 right bottom up veri col-2"><center><b>LUGAR DE DESPLAZAMIENTO</b></center></div>
                                 <div class="right bottom up veri col-6"><center><b><input type="text" class="form-control"></b></center></div>
 
-                                <div class="right left veri col-2"><center><b>&nbsp;</b></center></div>
-                                <div class="right veri2 bottom col-1"><center><b>RETORNO</b></center></div>
+                                <div class="div_color3 right left veri col-2"><center><b>&nbsp;</b></center></div>
+                                <div class="div_color3 right veri2 bottom col-1"><center><b>RETORNO</b></center></div>
                                 <div class="right veri bottom col-1"><center><b><input type="text" class="form-control"></b></center></div>
                                 <div class="right veri bottom col-2"><center><b>DEPARTAMENTO</b></center></div>
                                 <div class="right veri bottom col-2"><center><b>MUNICIPIO</b></center></div>
                                 <div class="right veri bottom col-2"><center><b>VEREDA</b></center></div>
                                 <div class="right veri bottom col-2"><center><b>BARRIO</b></center></div>
-                                <div class="right left bottom veri col-2"><center><b>TIPO DE PROCESO</b></center></div>
-                                <div class="right bottom veri2 col-1"><center><b>REUBICACION</b></center></div>
+                                <div class="div_color3 right left bottom veri col-2"><center><b>TIPO DE PROCESO</b></center></div>
+                                <div class="div_color3 right bottom veri2 col-1"><center><b>REUBICACION</b></center></div>
                                 <div class="right bottom veri col-1"><center><b><input type="text" class="form-control"></b></center></div>
                                 <div class="right veri bottom col-2"><center><b><input type="text" class="form-control"></b></center></div>
                                 <div class="right veri bottom col-2"><center><b><input type="text" class="form-control"></b></center></div>
                                 <div class="right veri bottom col-2"><center><b><input type="text" class="form-control"></b></center></div>
                                 <div class="right veri bottom col-2"><center><b><input type="text" class="form-control"></b></center></div>
 
-                                <div class="left right bottom  veri col-4"><center><b>DATOS DEL PROFESIONAL</b></center></div>
-                                <div class="right bottom  veri col-8"><center><b>&nbsp;</b></center></div>
+                                <div class="div_color3 left right bottom  veri col-4"><center><b>DATOS DEL PROFESIONAL</b></center></div>
+                                <div class="right bottom  veri col-8"><center><input type="text" class="form-control"></center></div>
 
-                                <div class="left right bottom  veri col-12"><center><b>DATOS DEL JEFE DE HOGAR</b></center></div>
-                                <div class="left right bottom  veri col-4"><center><b>NOMBRES Y APELLIDOS</b></center></div>
+                                <div class="div_color2 left right bottom  veri col-12"><center><b>DATOS DEL JEFE DE HOGAR</b></center></div>
+                                <div class="div_color3 left right bottom  veri col-4"><center><b>NOMBRES Y APELLIDOS</b></center></div>
                                 <div class=" right bottom  veri col-6">
                                     <div class="row row-cols-2 row-cols-lg-4">
                                         <div class="right veri col"><center><b><input type="text" class="form-control"></b></center></div>
@@ -522,37 +533,37 @@
                                         <div class=" veri col"><center><b><input type="text" class="form-control"></b></center></div>
                                     </div>                                    
                                 </div>
-                                <div class=" right bottom  veri2 col-1"><center><b>DOCUMENTO</b></center>
+                                <div class=" div_color3 right bottom  veri2 col-1"><center><b>DOCUMENTO</b></center>
                                 </div>
                                 <div class=" right bottom  veri2 col-1"><center><b><input type="text" class="form-control"></b></center>
                                 </div>
 
-                                <div class="left veri bottom right col-2"><center><b>FECHA NACIMIENTO</b></center></div>
+                                <div class="div_color3 left veri bottom right col-2"><center><b>FECHA NACIMIENTO</b></center></div>
                                 <div class="right bottom veri col-2"><center><b ><input type="date" class="form-control"></b></center></div>
 
                                 <div class=" bottom col-8">
                                     <div class="row row-cols-2 row-cols-lg-4">
-                                        <div class="right veri col"><center><b>EDAD</b></center></div>
+                                        <div class="div_color3 right veri col"><center><b>EDAD</b></center></div>
                                         <div class="right veri col"><center><b><input type="text" class="form-control"></b></center></div>
-                                        <div class="right veri col"><center><b>GENERO</b></center></div>
+                                        <div class="div_color3 right veri col"><center><b>GENERO</b></center></div>
                                         <div class=" right   veri2 col"><center><b><input type="text" class="form-control"></b></center>
                                     </div>                                    
                                 </div>
                                 </div>
-                                <div class="left right bottom veri col-4"><center><b>REDES  DE APOYO INSTITUCIONAL</b></center></div>
+                                <div class="div_color3 left right bottom veri col-4"><center><b>REDES  DE APOYO INSTITUCIONAL</b></center></div>
                                 <div class="right bottom veri col-4"><center><b><input type="text" class="form-control"></b></center></div>
-                                <div class="right bottom veri col-1"><center><b>TELEFONOS</b></center></div>
+                                <div class="div_color3 right bottom veri col-1"><center><b>TELEFONOS</b></center></div>
                                 <div class="right bottom veri col-3"><center><b><input type="text" class="form-control"></b></center></div>
                             </div>
                             <div class="row right left align-items-center">
-                                <div class=" bottom  veri col-12"><center><b>CONDICION DIFERENCIAL FAMILIAR (marque con una x)</b></center></div>
+                                <div class="div_color2 bottom  veri col-12"><center><b>CONDICION DIFERENCIAL FAMILIAR (marque con una x)</b></center></div>
                                 <div class="col-4">
                                     <div class="col-12">
                                             <div class="col-12">
                                                 <div class="row ">
-                                                    <div class="right  bottom veri col-9"><center><b>CABEZA DE HOGAR ADULTO MAYOR</b></center></div>
+                                                    <div class="div_color3 right  bottom veri col-9"><center><b>CABEZA DE HOGAR ADULTO MAYOR</b></center></div>
                                                     <div class=" bottom col-3"><center><b><input type="text" class="form-control"></b></center></div>
-                                                    <div class="right  veri col-9"><center><b>MUJER CABEZA DE HOGAR</b></center></div>
+                                                    <div class="div_color3 right  veri col-9"><center><b>MUJER CABEZA DE HOGAR</b></center></div>
                                                     <div class=" col-3"><center><b><input type="text" class="form-control"></b></center></div>
                                                 </div>
                                             </div>
@@ -562,17 +573,17 @@
                                     <div class="col-12">
                                             <div class="col-12">
                                                 <div class="row ">
-                                                    <div class=" right left bottom veri col-9"><center><b>CABEZA DE HOGAR MENOR DE EDAD</b></center></div>
+                                                    <div class="div_color3 right left bottom veri col-9"><center><b>CABEZA DE HOGAR MENOR DE EDAD</b></center></div>
                                                     <div class=" bottom right col-3"><center><b><input type="text" class="form-control"></b></center></div>
-                                                    <div class="right left veri col-9"><center><b>GRUPO ETNICO</b></center></div>
+                                                    <div class="div_color3 right left veri col-9"><center><b>GRUPO ETNICO</b></center></div>
                                                     <div class="right col-3"><center><b><input type="text" class="form-control"></b></center></div>
                                                 </div>
                                             </div>
                                     </div>
                                 </div>
-                                <div class="col-2" >
-                                    <div  class=" row align-items-center">
-                                        <div class=" col"><center><b>SABE LEER?</b></center></div>
+                                <div class="col-2 div_color3" >
+                                    <div  class="div_color3 row align-items-center">
+                                        <div class="div_color3 col"><center><b>SABE LEER?</b></center></div>
                                     </div>
                                 </div>
                                 <div class="col-2" >
@@ -587,9 +598,9 @@
                                     <div class="col-12">
                                             <div class="col-12">
                                                 <div class="row ">
-                                                    <div class="right  bottom veri col-9"><center><b>ADULTO MAYOR UNIPERSONAL</b></center></div>
+                                                    <div class="div_color3 right  bottom veri col-9"><center><b>ADULTO MAYOR UNIPERSONAL</b></center></div>
                                                     <div class=" bottom col-3"><center><b><input type="text" class="form-control"></b></center></div>
-                                                    <div class="right  veri col-9"><center><b>CABEZA DE HOGAR DISCAPACITADO</b></center></div>
+                                                    <div class="div_color3 right  veri col-9"><center><b>CABEZA DE HOGAR DISCAPACITADO</b></center></div>
                                                     <div class=" col-3"><center><b><input type="text" class="form-control"></b></center></div>
                                                 </div>
                                             </div>
@@ -599,9 +610,9 @@
                                     <div class="col-12">
                                             <div class="col-12">
                                                 <div class="row ">
-                                                    <div class=" right left bottom veri col-9"><center><b>NINGUNA</b></center></div>
+                                                    <div class="div_color3 right left bottom veri col-9"><center><b>NINGUNA</b></center></div>
                                                     <div class=" bottom right col-3"><center><b><input type="text" class="form-control"></b></center></div>
-                                                    <div class="right left veri col-9"><center><b>OTRO,  CUÁL?</b></center></div>
+                                                    <div class="div_color3 right left veri col-9"><center><b>OTRO,  CUÁL?</b></center></div>
                                                     <div class="right col-3"><center><b><input type="text" class="form-control"></b></center></div>
                                                 </div>
                                             </div>
@@ -609,7 +620,7 @@
                                 </div>
                                 <div class="col-2" >
                                     <div  class=" row align-items-center">
-                                        <div class=" col"><center><b>SABE ESCRIBIR?</b></center></div>
+                                        <div class="div_color3 col"><center><b>SABE ESCRIBIR?</b></center></div>
                                     </div>
                                 </div>
                                 <div class="col-2" >
@@ -619,14 +630,14 @@
                                 </div>
                             </div><br>
                             <div class="row right  left ">
-                                    <div class="bottom up veri col-12"><center><b>TIPOLOGIA  FAMILIAR (marque con una x)</b></center></div>
-                                    <div class="right bottom veri col-1"><center><b>NUCLEAR</b></center></div>
-                                    <div class="right veri2 bottom col-1"><center><b>EXTENSA</b></center></div>
-                                    <div class="right veri bottom col-2"><center><b>MONOPARENTAL</b></center></div>
-                                    <div class="right veri bottom col-2"><center><b>UNIPERSONAL</b></center></div>
-                                    <div class="right veri bottom col-2"><center><b>FRATERNA</b></center></div>
-                                    <div class="right veri bottom col-2"><center><b>SIMULTANEA</b></center></div>
-                                    <div class="right veri bottom col-2"><center><b>COMPUESTA</b></center></div>
+                                    <div class="div_color2 bottom up veri col-12"><center><b>TIPOLOGIA  FAMILIAR (marque con una x)</b></center></div>
+                                    <div class="right div_color3 bottom veri col-1"><center><b>NUCLEAR</b></center></div>
+                                    <div class="right div_color3 veri2 bottom col-1"><center><b>EXTENSA</b></center></div>
+                                    <div class="right div_color3 veri bottom col-2"><center><b>MONOPARENTAL</b></center></div>
+                                    <div class="right div_color3 veri bottom col-2"><center><b>UNIPERSONAL</b></center></div>
+                                    <div class="right div_color3 veri bottom col-2"><center><b>FRATERNA</b></center></div>
+                                    <div class="right div_color3 veri bottom col-2"><center><b>SIMULTANEA</b></center></div>
+                                    <div class="right div_color3 veri bottom col-2"><center><b>COMPUESTA</b></center></div>
                                     <div class="right  bottom veri col-1"><center><b><input type="text" class="form-control"></b></center></div>
                                     <div class="right bottom veri2 col-1"><center><b><input type="text" class="form-control"></b></center></div>
                                     <div class="right bottom veri col-2"><center><b><input type="text" class="form-control"></b></center></div>
@@ -639,25 +650,25 @@
                             <div class="row up right  left ">
                                     <div class="right bottom veri col-4">
                                         <div class="row">
-                                            <div class="col-8"><center><b>PERTENECE A UN  UN GRUPO  ETNICO</b></center></div>                                        
+                                            <div class="div_color3 col-8"><center><b>PERTENECE A UN  UN GRUPO  ETNICO</b></center></div>                                        
                                             <div class="left col-4"><center><b><input type="text" class="form-control"></b></center></div>
-                                            <div class="up col-8"><center><b>AUTORIDAD</b></center></div>                                        
+                                            <div class="div_color3 up col-8"><center><b>AUTORIDAD</b></center></div>                                        
                                             <div class="up left col-4"><center><b><input type="text" class="form-control"></b></center></div>
-                                            <div class="up col-8"><center><b>COMUNIDAD</b></center></div>                                        
+                                            <div class="div_color3 up col-8"><center><b>COMUNIDAD</b></center></div>                                        
                                             <div class="up left col-4"><center><b><input type="text" class="form-control"></b></center></div>
                                         </div>
                                     </div>
-                                    <div class="right  bottom veri col-2"><center><b><br>USTED O ALGUN MIEMBRO DE SU FAMILIA TIENE ALGUN TIPO DE DISCAPACIDAD</b></center></div>
+                                    <div class="div_color3 ight  bottom veri col-2"><center><b><br>USTED O ALGUN MIEMBRO DE SU FAMILIA TIENE ALGUN TIPO DE DISCAPACIDAD</b></center></div>
                                     <div class="right veri bottom col-2">
                                                 <br><textarea type="text" class="form-control"></textarea>
                                     </div>
                                     <div class="right veri bottom col-2">
-                                        <div class="col-12 divtitle"><center><b>QUIÉN?</b></center></div>
+                                        <div class="div_color3 col-12 divtitle"><center><b>QUIÉN?</b></center></div>
                                         <br>
                                         <div class="right  bottom veri col-12"><center><b><input type="text" class="form-control"></b></center></div>
                                     </div>
                                     <div class=" veri bottom col-2">
-                                        <div class="col-12 divtitle"><center><b>CUÁL?</b></center></div>
+                                        <div class="div_color3 col-12 divtitle"><center><b>CUÁL?</b></center></div>
                                         <br>
                                         <div class=" bottom veri col-12"><center><b><input type="text" class="form-control"></b></center></div>
                                     </div>
@@ -665,18 +676,18 @@
                             <br>
 
                             <div class="row left right ">
-                                    <div class="bottom up veri col-12"><center><b>VIVIENDA ANTES DEL DESPLAZAMIENTO</b></center></div>
-                                    <div class="bottom veri col-12"><center><b>CALIDAD DE DERECHO (MARQUE CON UNA X)</b></center></div>
+                                    <div class="div_color2 bottom up veri col-12"><center><b>VIVIENDA ANTES DEL DESPLAZAMIENTO</b></center></div>
+                                    <div class="div_color3 bottom veri col-12"><center><b>CALIDAD DE DERECHO (MARQUE CON UNA X)</b></center></div>
 
-                                    <div class="right veri bottom col-2"><center><b>TIPO DE TENENCIA</b></center></div>
+                                    <div class="div_color3 right veri bottom col-2"><center><b>TIPO DE TENENCIA</b></center></div>
                                     <div class="right veri bottom col-2"><input type="text" class="form-control"></div>
-                                    <div class="right veri bottom col-2"><center><b>TIENE DOCUMENTO</b></center></div>
+                                    <div class="div_color3 right veri bottom col-2"><center><b>TIENE DOCUMENTO</b></center></div>
                                     <div class="right veri bottom col-1"><input type="text" class="form-control"></div>
-                                    <div class=" veri bottom col-1"><center><b>CUAL?</b></center></div>
+                                    <div class="div_color3 veri bottom col-1"><center><b>CUAL?</b></center></div>
                                     <div class=" veri bottom col-4"><input type="text" class="form-control"></div>
                                     <div class="bottom col-4">
                                         <div class="row right align-items-center">
-                                            <div class="col-4" >
+                                            <div class="div_color3 col-4" >
                                                 <div  class=" row">
                                                     <div class="veri2 col"><center><b>EN QUE ESTADO SE ENCONTRABA ANTES DEL DESPLAZAMIENTO</b></center></div>
                                                 </div>
@@ -686,7 +697,7 @@
                                                     <div class=" col"><center><b><input type="text" class="form-control"></b></center></div>
                                                 </div><br>
                                             </div>
-                                            <div class=" col-4" >
+                                            <div class="div_color3  col-4" >
                                                 <div  class=" row">
                                                     <div class="veri col"><center><b>SERVICIOS PÚBLICOS BÁSICOS</b></center></div>
                                                 </div>
@@ -695,15 +706,15 @@
                                     </div>
                                     <div class="right veri bottom col-4">
                                         <div class="row ">
-                                                <div class="veri bottom col-3"><br><center><b>ACUEDUCTO</b></center></div>
+                                                <div class="div_color3 veri bottom col-3"><br><center><b>ACUEDUCTO</b></center></div>
                                                 <div class="veri bottom col-3"><input type="text" class="form-control"></div>
-                                                <div class="veri bottom col-3"><br><center><b>ALCANTARILLADO</b></center></div>
+                                                <div class="div_color3 veri bottom col-3"><br><center><b>ALCANTARILLADO</b></center></div>
                                                 <div class="veri bottom col-3"><input type="text" class="form-control"></div>
                                         </div>
                                         <div class="row ">
-                                                <div class="veri col-3"><center><br><b>ENERGÍA</b></center></div>
+                                                <div class="div_color3 veri col-3"><center><br><b>ENERGÍA</b></center></div>
                                                 <div class="veri col-3"><input type="text" class="form-control"></div>
-                                                <div class="veri col-3"><center><b>POZO SEPTICO</b></center></div>
+                                                <div class="div_color3 veri col-3"><center><b>POZO SEPTICO</b></center></div>
                                                 <div class="veri col-3"><input type="text" class="form-control"></div>
                                         </div>
                                     </div>
@@ -711,7 +722,7 @@
                                         <div class="row  align-items-center">
                                             <div class="col-6" >
                                                 <div  class=" row">
-                                                    <div class="veri col"><center><b>ADQUIRIO ESTA VIVIENDA POR SUBSIDIO</b></center></div>
+                                                    <div class="div_color3 veri col"><center><b>ADQUIRIO ESTA VIVIENDA POR SUBSIDIO</b></center></div>
                                                 </div>
                                             </div>
                                             <div class="left  col-6" >
@@ -722,7 +733,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="bottom col-4">
+                                    <div class="bottom div_color3 col-4">
                                         <div class="row ">
                                             <center><div class="col-6" ><br><br>
                                                 <div  class=" row">
@@ -733,49 +744,49 @@
                                     </div>
                                     <div class="left veri bottom col-8">
                                         <div class="row ">
-                                                <div class="bottom right col-4"><center><b>ESCUELA/COLEGIO</b></center></div>
+                                                <div class="div_color3 bottom right col-4"><center><b>ESCUELA/COLEGIO</b></center></div>
                                                 <div class="bottom right col-2"><input type="text" class="form-control"></div>
-                                                <div class="bottom right col-4"><center><b> ASISTENCIA SOCIAL</b></center></div>
+                                                <div class="div_color3 bottom right col-4"><center><b> ASISTENCIA SOCIAL</b></center></div>
                                                 <div class="bottom col-2"><input type="text" class="form-control"></div>
                                         </div>
                                         <div class="row ">
-                                                <div class="bottom right col-4"><center><b>PUESTO SALUD</b></center></div>
+                                                <div class="div_color3 bottom right col-4"><center><b>PUESTO SALUD</b></center></div>
                                                 <div class="bottom right col-2"><input type="text" class="form-control"></div>
-                                                <div class="bottom right col-4"><center><b>TRASPORTE /VÍAS</b></center></div>
+                                                <div class="div_color3 bottom right col-4"><center><b>TRASPORTE /VÍAS</b></center></div>
                                                 <div class="bottom col-2"><input type="text" class="form-control"></div>
                                         </div>
                                         <div class="row ">
-                                                <div class="bottom right col-4"><center><b>CENTROS DE RECREACIÓN</b></center></div>
+                                                <div class="div_color3 bottom right col-4"><center><b>CENTROS DE RECREACIÓN</b></center></div>
                                                 <div class="bottom right col-2"><input type="text" class="form-control"></div>
-                                                <div class="bottom right col-4"><center><b>OTRO</b></center></div>
+                                                <div class="div_color3 bottom right col-4"><center><b>OTRO</b></center></div>
                                                 <div class="bottom col-2"><input type="text" class="form-control"></div>
                                         </div>
                                         <div class="row ">
-                                                <div class="right col-4"><center><b>CENTROS COMUNALES</b></center></div>
+                                                <div class="div_color3 right col-4"><center><b>CENTROS COMUNALES</b></center></div>
                                                 <div class="right col-2"><input type="text" class="form-control"></div>
-                                                <div class="right col-4"><center><b>CUAL</b></center></div>
+                                                <div class="div_color3 right col-4"><center><b>CUAL</b></center></div>
                                                 <div class=" col-2"><input type="text" class="form-control"></div>
                                         </div>
                                     </div>
                             </div><br>
 
                             <div class="row left right ">
-                                    <div class="bottom up veri col-12"><center><b>VIVIENDA A LA CUAL ESPERA RETORNAR O REUBICARSE LA FAMILIA</b></center></div>
-                                    <div class="right veri bottom col-2"><center><b>PAGO DE IMPUESTOS</b></center></div>
+                                    <div class="div_color2 bottom up veri col-12"><center><b>VIVIENDA A LA CUAL ESPERA RETORNAR O REUBICARSE LA FAMILIA</b></center></div>
+                                    <div class="div_color3 right veri bottom col-2"><center><b>PAGO DE IMPUESTOS</b></center></div>
                                     <div class="right veri bottom col-2"><input type="text" class="form-control"></div>
-                                    <div class="right veri bottom col-2"><center><b>OTRAS DEUDAS</b></center></div>
+                                    <div class="div_color3 right veri bottom col-2"><center><b>OTRAS DEUDAS</b></center></div>
                                     <div class="right veri bottom col-6"><input type="text" class="form-control"></div>
-                                    <div class="right veri bottom col-2"><center><b>TIPO DE TENENCIA</b></center></div>
+                                    <div class="div_color3 right veri bottom col-2"><center><b>TIPO DE TENENCIA</b></center></div>
                                     <div class="right veri bottom col-2"><input type="text" class="form-control"></div>
-                                    <div class="right veri bottom col-2"><center><b>TIENE DOCUMENTO</b></center></div>
+                                    <div class="div_color3 right veri bottom col-2"><center><b>TIENE DOCUMENTO</b></center></div>
                                     <div class="right veri bottom col-1"><input type="text" class="form-control"></div>
-                                    <div class=" veri bottom col-1"><center><b>CUAL?</b></center></div>
+                                    <div class="div_color3 veri bottom col-1"><center><b>CUAL?</b></center></div>
                                     <div class=" veri bottom col-4"><input type="text" class="form-control"></div>
                                     <div class="bottom col-4">
                                         <div class="row right align-items-center">
                                             <div class="col-4" >
                                                 <div  class=" row">
-                                                    <div class="veri2 col"><center><b>EN QUE ESTADO EN LA QUE SE ENCUENTRA</b></center></div>
+                                                    <div class="div_color3 veri2 col"><center><b>EN QUE ESTADO EN LA QUE SE ENCUENTRA</b></center></div>
                                                 </div>
                                             </div>
                                             <div class="left right col-4" >
@@ -785,22 +796,22 @@
                                             </div>
                                             <div class=" col-4" >
                                                 <div  class=" row">
-                                                    <div class="veri col"><center><b>SERVICIOS PÚBLICOS BÁSICOS</b></center></div>
+                                                    <div class="div_color3 veri col"><center><b>SERVICIOS PÚBLICOS BÁSICOS</b></center></div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="right veri bottom col-4">
                                         <div class="row ">
-                                                <div class="veri bottom col-3"><br><center><b>ACUEDUCTO</b></center></div>
+                                                <div class="div_color3 veri bottom col-3"><br><center><b>ACUEDUCTO</b></center></div>
                                                 <div class="veri bottom col-3"><input type="text" class="form-control"></div>
-                                                <div class="veri bottom col-3"><br><center><b>ALCANTARILLADO</b></center></div>
+                                                <div class="div_color3 veri bottom col-3"><br><center><b>ALCANTARILLADO</b></center></div>
                                                 <div class="veri bottom col-3"><input type="text" class="form-control"></div>
                                         </div>
                                         <div class="row ">
-                                                <div class="veri col-3"><center><br><b>ENERGÍA</b></center></div>
+                                                <div class="div_color3 veri col-3"><center><br><b>ENERGÍA</b></center></div>
                                                 <div class="veri col-3"><input type="text" class="form-control"></div>
-                                                <div class="veri col-3"><center><b>POZO SEPTICO</b></center></div>
+                                                <div class="div_color3 veri col-3"><center><b>POZO SEPTICO</b></center></div>
                                                 <div class="veri col-3"><input type="text" class="form-control"></div>
                                         </div>
                                     </div>
@@ -808,7 +819,7 @@
                                         <div class="row  align-items-center">
                                             <div class="col-6" >
                                                 <div  class=" row">
-                                                    <div class="veri col"><center><b>SUBSIDIO DE VIVIENDA DURANTE EL DESPLAZAMIENTO</b></center></div>
+                                                    <div class="div_color3 veri col"><center><b>SUBSIDIO DE VIVIENDA DURANTE EL DESPLAZAMIENTO</b></center></div>
                                                 </div>
                                             </div>
                                             <div class="left  col-6" >
@@ -818,17 +829,17 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="right veri bottom col-2"><br><center><b>OBSERVACIONES</b></center></div>
+                                    <div class="div_color3 right veri bottom col-2"><br><center><b>OBSERVACIONES</b></center></div>
                                     <div class=" veri bottom col-10"><textarea style="max-height: 71px; min-height: 71px;" type="text" class="form-control"></textarea></div>
                             </div><br>
 
                             <div class="row left right ">
-                                    <div class="bottom up veri col-12"><center><b>PERFIL SOCIOEMPRESARIAL</b></center></div>
-                                    <div class="right veri bottom col-2"><center><b>NIVEL DE ESCOLARIDAD</b></center></div>
+                                    <div class="div_color2 bottom up veri col-12"><center><b>PERFIL SOCIOEMPRESARIAL</b></center></div>
+                                    <div class="div_color3 right veri bottom col-2"><center><b>NIVEL DE ESCOLARIDAD</b></center></div>
                                     <div class="right veri bottom col-2"><input type="text" class="form-control"></div>
-                                    <div class="right veri bottom col-2"><center><b>AÑO CULMINADO</b></center></div>
+                                    <div class="div_color3 right veri bottom col-2"><center><b>AÑO CULMINADO</b></center></div>
                                     <div class="right veri bottom col-2"><input type="text" class="form-control"></div>
-                                    <div class=" veri bottom col-2"><center><b>AÑOS DE EXPERIENCIA</b></center></div>
+                                    <div class="div_color3 veri bottom col-2"><center><b>AÑOS DE EXPERIENCIA</b></center></div>
                                     <div class=" veri bottom col-2"><input type="text" class="form-control"></div>
 
                                     <div class="bottom col-4">
@@ -842,36 +853,36 @@
                                     </div>
                                     <div class="left veri bottom col-8">
                                         <div class="row ">
-                                                <div class="bottom right col-4"><center><b>AGROPECUARIA</b></center></div>
+                                                <div class="div_color3 bottom right col-4"><center><b>AGROPECUARIA</b></center></div>
                                                 <div class="bottom right col-2"><input type="text" class="form-control"></div>
-                                                <div class="bottom right col-4"><center><b> ¿CULTIVOS MÁS IMPORTANTES?</b></center></div>
+                                                <div class="div_color3 bottom right col-4"><center><b> ¿CULTIVOS MÁS IMPORTANTES?</b></center></div>
                                                 <div class="bottom col-2"><input type="text" class="form-control"></div>
                                         </div>
                                         <div class="row ">
-                                                <div class="bottom right col-4"><center><b>VENTAS</b></center></div>
+                                                <div class="div_color3 bottom right col-4"><center><b>VENTAS</b></center></div>
                                                 <div class="bottom right col-2"><input type="text" class="form-control"></div>
-                                                <div class="bottom right col-4"><center><b>¿QUE VENDIA?</b></center></div>
+                                                <div class="div_color3 bottom right col-4"><center><b>¿QUE VENDIA?</b></center></div>
                                                 <div class="bottom col-2"><input type="text" class="form-control"></div>
                                         </div>
                                         <div class="row ">
-                                                <div class="bottom right col-4"><center><b>SERVICIOS</b></center></div>
+                                                <div class="div_color3 bottom right col-4"><center><b>SERVICIOS</b></center></div>
                                                 <div class="bottom right col-2"><input type="text" class="form-control"></div>
-                                                <div class="bottom right col-4"><center><b>QUE SERVICIO PRESTABA?</b></center></div>
+                                                <div class="div_color3 bottom right col-4"><center><b>QUE SERVICIO PRESTABA?</b></center></div>
                                                 <div class="bottom col-2"><input type="text" class="form-control"></div>
                                         </div>
                                         <div class="row ">
-                                                <div class="right col-4"><center><b>MANUFACTURA</b></center></div>
+                                                <div class="div_color3 right col-4"><center><b>MANUFACTURA</b></center></div>
                                                 <div class="right col-2"><input type="text" class="form-control"></div>
-                                                <div class="right col-4"><center><b>PRODUCTO ELABORADO?</b></center></div>
+                                                <div class="div_color3  col-4"><center><b>PRODUCTO ELABORADO?</b></center></div>
                                                 <div class=" col-2"><input type="text" class="form-control"></div>
                                         </div>
                                     </div>
 
-                                    <div class="right veri bottom col-2"><center><b>TIENE ALGUN TIPO DE FORMACIÓN PARA EL TRABAJO</b></center></div>
+                                    <div class="div_color3 right veri bottom col-2"><center><b>TIENE ALGUN TIPO DE FORMACIÓN PARA EL TRABAJO</b></center></div>
                                     <div class="right veri bottom col-2"><input type="text" class="form-control"></div>
-                                    <div class="right veri bottom col-2"><center><b>¿HA PARTICIPADO EN OTROS PROGRAMAS DE GI?</b></center></div>
+                                    <div class="div_color3 right veri bottom col-2"><center><b>¿HA PARTICIPADO EN OTROS PROGRAMAS DE GI?</b></center></div>
                                     <div class="right veri bottom col-2"><input type="text" class="form-control"></div>
-                                    <div class=" veri bottom col-2"><center><b>¿QUE PROYECTO REALIZO?</b></center></div>
+                                    <div class="div_color3 veri bottom col-2"><center><b>¿QUE PROYECTO REALIZO?</b></center></div>
                                     <div class=" veri bottom col-2"><input type="text" class="form-control"></div>
 
                                     <div class="bottom col-4">
@@ -885,34 +896,34 @@
                                     </div>
                                     <div class="left veri bottom col-8">
                                         <div class="row ">
-                                                <div class="bottom right col-4"><center><b>AGROPECUARIA</b></center></div>
+                                                <div class="div_color3 bottom right col-4"><center><b>AGROPECUARIA</b></center></div>
                                                 <div class="bottom right col-2"><input type="text" class="form-control"></div>
-                                                <div class="bottom right col-4"><center><b> ¿CULTIVOS MÁS IMPORTANTES?</b></center></div>
+                                                <div class="div_color3 bottom right col-4"><center><b> ¿CULTIVOS MÁS IMPORTANTES?</b></center></div>
                                                 <div class="bottom col-2"><input type="text" class="form-control"></div>
                                         </div>
                                         <div class="row ">
-                                                <div class="bottom right col-4"><center><b>VENTAS</b></center></div>
+                                                <div class="div_color3 bottom right col-4"><center><b>VENTAS</b></center></div>
                                                 <div class="bottom right col-2"><input type="text" class="form-control"></div>
-                                                <div class="bottom right col-4"><center><b>¿QUE VENDIA?</b></center></div>
+                                                <div class="div_color3 right col-4"><center><b>¿QUE VENDIA?</b></center></div>
                                                 <div class="bottom col-2"><input type="text" class="form-control"></div>
                                         </div>
                                         <div class="row ">
-                                                <div class="bottom right col-4"><center><b>SERVICIOS</b></center></div>
+                                                <div class="div_color3 bottom right col-4"><center><b>SERVICIOS</b></center></div>
                                                 <div class="bottom right col-2"><input type="text" class="form-control"></div>
-                                                <div class="bottom right col-4"><center><b>QUE SERVICIO PRESTABA?</b></center></div>
+                                                <div class="div_color3 bottom right col-4"><center><b>QUE SERVICIO PRESTABA?</b></center></div>
                                                 <div class="bottom col-2"><input type="text" class="form-control"></div>
                                         </div>
                                         <div class="row ">
-                                                <div class="right col-4"><center><b>MANUFACTURA</b></center></div>
+                                                <div class="div_color3 right col-4"><center><b>MANUFACTURA</b></center></div>
                                                 <div class="right col-2"><input type="text" class="form-control"></div>
-                                                <div class="right col-4"><center><b>PRODUCTO ELABORADO?</b></center></div>
+                                                <div class="div_color3 right col-4"><center><b>PRODUCTO ELABORADO?</b></center></div>
                                                 <div class=" col-2"><input type="text" class="form-control"></div>
                                         </div>
                                     </div>
                             </div><br>
 
                             <div class="row left right ">
-                                    <div class="bottom up veri col-12"><center><b>RESUMEN VIABILIDAD PROCESO</b></center></div>
+                                    <div class="div_color2 bottom up veri col-12"><center><b>RESUMEN VIABILIDAD PROCESO</b></center></div>
                                     <div class="right  bottom veri col-10"><b>EN LA DESICIÓN DE RETORNAR O REUBICARSE PREDOMINA LA FUERTE INFLUENCIA DE CIERTOS TIPOS DE VIOLENCIA DIRECTA O INDIRECTA, ESTRUCTURAL Y/O CULTURAL</b></div>
                                     <div class=" bottom col-2"><b><input type="text" class="form-control"></b></div>
                                     <div class="right  bottom veri col-10"><b>EL GRUPO FAMILIAR CUENTA CON REDES DE APOYO FUERTES EN EL LUGAR DE RETORNO Y REUBICACIÓN</b></div>
